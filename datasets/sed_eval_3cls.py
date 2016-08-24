@@ -8,25 +8,23 @@ import os
 import re
 import cPickle
 import numpy as np
+import json
 
-def parse_rec(filename, imagename):
+def parse_rec(annopath, imagename):
     """ Parse a INRIA-Person annotation file """
     objects = []
-    import json
-    with open(filename) as f:
-        data = json.load(f)
-    try:
-        objs = next(img[1] for img in data if str(img[0]).replace('/','_') == imagename + '.jpg')
-    except:
-        objs = []
+    imagepath = os.path.join(annopath, 'refine_roi', imagename + '.roi')
+    with open(imagepath) as f:
+        data = f.read()
+    objs = re.findall('(\S+) (\d+) (\d+) (\d+) (\d+)', data)
 
     for ix, obj in enumerate(objs):
         obj_struct = {}
-        obj_struct['bbox'] = [int(obj['xmin']) / 320.0 * 720.0 ,
-                              int(obj['ymin']) / 240.0 * 576.0 ,
-                              int(obj['xmax']) / 320.0 * 720.0,
-                              int(obj['ymax']) / 240.0 * 576.0 ]
-        obj_struct['name'] = 'CellToEar'
+        obj_struct['bbox'] = [  float(obj[1]),
+                                float(obj[2]),
+                                float(obj[3]),
+                                float(obj[4])]
+        obj_struct['name'] = obj[0] 
         obj_struct['difficult'] = 0
         objects.append(obj_struct)
     return objects
@@ -107,7 +105,7 @@ def sed_eval(detpath,
         # load annots
         recs = {}
         for i, imagename in enumerate(imagenames):
-            recs[imagename] = parse_rec(os.path.join(annopath, 'CellToEar.refine.label.json'), imagename)
+            recs[imagename] = parse_rec(annopath, imagename)
             if i % 100 == 0:
                 print 'Reading annotation for {:d}/{:d}'.format(
                     i + 1, len(imagenames))
@@ -199,4 +197,3 @@ def sed_eval(detpath,
     ap = sed_ap(rec, prec, use_07_metric)
 
     return rec, prec, ap
-
