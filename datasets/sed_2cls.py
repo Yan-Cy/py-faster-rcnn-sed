@@ -16,9 +16,7 @@ import utils.cython_bbox
 import cPickle
 import subprocess
 import uuid
-from datetime import datetime
 from sed_eval import sed_eval
-
 
 class sed(imdb):
     def __init__(self, image_set, devkit_path):
@@ -27,10 +25,7 @@ class sed(imdb):
         self._devkit_path = devkit_path
         self._data_path = os.path.join(self._devkit_path, 'data')
         self._classes = ('__background__', # always index 0
-                         'Embrace',
-                         'Pointing',
-                         'CellToEar',
-                         'Pose')
+                         'CellToEar')
         self._class_to_ind = dict(zip(self.classes, xrange(self.num_classes)))
         self._image_ext = ['.jpg', '.png']
         self._image_index = self._load_image_set_index()
@@ -66,7 +61,7 @@ class sed(imdb):
                 break
         assert os.path.exists(image_path), \
                 'Path does not exist: {}'.format(image_path)
-	return image_path
+        return image_path
 
     def _load_image_set_index(self):
         """
@@ -122,14 +117,19 @@ class sed(imdb):
         """
         Load image and bounding boxes info from txt files of sed.
         """
-        filename = os.path.join(self._data_path, 'Annotations', 'roi', index + '.roi')
-        
-        with open(filename)as f:
-            data = f.read()
-        import re
-        objs = re.findall('(\S+) (\d+) (\d+) (\d+) (\d+)', data)
-        
+        filename = os.path.join(self._data_path, 'Annotations', 'CellToEar.refine.label.json')
+        # print 'Loading: {}'.format(filename)
+        import json
+        with open(filename) as f:
+            data = json.load(f)
+
+        #print index
+        try:
+            objs = next(img[1] for img in data if str(img[0]).replace('/','_') == index + '.jpg')
+        except:
+            print 'Can\'t find file ' + index
         num_objs = len(objs)
+
         boxes = np.zeros((num_objs, 4), dtype=np.uint16)
         gt_classes = np.zeros((num_objs), dtype=np.int32)
         overlaps = np.zeros((num_objs, self.num_classes), dtype=np.float32)
@@ -140,13 +140,12 @@ class sed(imdb):
         # Load object bounding boxes into a data frame.
         for ix, obj in enumerate(objs):
             # Make pixel indexes 0-based
-            x1 = float(obj[1])
-            y1 = float(obj[2])
-            x2 = float(obj[3])
-            y2 = float(obj[4])
+            x1 = float(obj['xmin']) / 320.0 * 720.0
+            y1 = float(obj['ymin']) / 240.0 * 576.0
+            x2 = float(obj['xmax']) / 320.0 * 720.0
+            y2 = float(obj['ymax']) / 240.0 * 576.0 
             #print x1, y1, x2, y2
-            file_cls = obj[0]
-            cls = self._class_to_ind[file_cls]
+            cls = self._class_to_ind['CellToEar']
             boxes[ix, :] = [x1, y1, x2, y2]
             gt_classes[ix] = cls
             overlaps[ix, cls] = 1.0
@@ -166,7 +165,6 @@ class sed(imdb):
                 continue
             print 'Writing {} results file'.format(cls)
             filename = self._get_results_file_template().format(cls)
-            print filename
             with open(filename, 'wt') as f:
                 for im_ind, index in enumerate(self.image_index):
                     dets = all_boxes[cls_ind][im_ind]
@@ -192,7 +190,7 @@ class sed(imdb):
     def _get_comp_id(self):
         comp_id = (self._comp_id + '_' + self._salt if self.config['use_salt']
             else self._comp_id)
-        return comp_id 
+        return comp_id
 
     def _get_results_file_template(self):
         # devkit/results/comp4-44503_det_test_{%s}.txt
