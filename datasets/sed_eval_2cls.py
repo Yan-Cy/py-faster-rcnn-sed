@@ -8,23 +8,22 @@ import os
 import re
 import cPickle
 import numpy as np
-import json
 
-def parse_rec(annopath, imagename):
+def parse_rec(filename, imagename):
     """ Parse a INRIA-Person annotation file """
     objects = []
-    imagepath = os.path.join(annopath, 'roi', imagename + '.roi')
-    with open(imagepath) as f:
-        data = f.read()
-    objs = re.findall('(\S+) (\d+) (\d+) (\d+) (\d+)', data)
+    import json
+    with open(filename) as f:
+        data = json.load(f)
+    objs = next(img[1] for img in data if str(img[0]).replace('/','_') == imagename + '.jpg')
 
     for ix, obj in enumerate(objs):
         obj_struct = {}
-        obj_struct['bbox'] = [  float(obj[1]),
-                                float(obj[2]),
-                                float(obj[3]),
-                                float(obj[4])]
-        obj_struct['name'] = obj[0] 
+        obj_struct['bbox'] = [int(obj['xmin']) / 320.0 * 720.0 ,
+                              int(obj['ymin']) / 240.0 * 576.0 ,
+                              int(obj['xmax']) / 320.0 * 720.0,
+                              int(obj['ymax']) / 240.0 * 576.0 ]
+        obj_struct['name'] = 'CellToEar'
         obj_struct['difficult'] = 0
         objects.append(obj_struct)
     return objects
@@ -93,30 +92,30 @@ def sed_eval(detpath,
     # cachedir caches the annotations in a pickle file
 
     # first load gt
-    #if not os.path.isdir(cachedir):
-    #    os.mkdir(cachedir)
-    #cachefile = os.path.join(cachedir, 'annots.pkl')
+    if not os.path.isdir(cachedir):
+        os.mkdir(cachedir)
+    cachefile = os.path.join(cachedir, 'annots.pkl')
     # read list of images
     with open(imagesetfile, 'r') as f:
         lines = f.readlines()
     imagenames = [x.strip() for x in lines]
 
-    #if not os.path.isfile(cachefile):
-    #    # load annots
-    recs = {}
-    for i, imagename in enumerate(imagenames):
-        recs[imagename] = parse_rec(annopath, imagename)
-        if i % 100 == 0:
-            print 'Reading annotation for {:d}/{:d}'.format(
-                i + 1, len(imagenames))
-    # save
-    #    print 'Saving cached annotations to {:s}'.format(cachefile)
-    #    with open(cachefile, 'w') as f:
-    #        cPickle.dump(recs, f)
-    #else:
-    #    # load
-    #    with open(cachefile, 'r') as f:
-    #        recs = cPickle.load(f)
+    if not os.path.isfile(cachefile):
+        # load annots
+        recs = {}
+        for i, imagename in enumerate(imagenames):
+            recs[imagename] = parse_rec(os.path.join(annopath, 'CellToEar.refine.label.json'), imagename)
+            if i % 100 == 0:
+                print 'Reading annotation for {:d}/{:d}'.format(
+                    i + 1, len(imagenames))
+        # save
+        print 'Saving cached annotations to {:s}'.format(cachefile)
+        with open(cachefile, 'w') as f:
+            cPickle.dump(recs, f)
+    else:
+        # load
+        with open(cachefile, 'r') as f:
+            recs = cPickle.load(f)
 
     # extract gt objects for this class
     class_recs = {}
