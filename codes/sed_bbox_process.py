@@ -46,6 +46,8 @@ def extract_bbox():
     
         img_frame = begin + second_in_frame
         img_name = '_'.join([pre, date, E, camera, str(img_frame)])
+        
+        '''
         if not os.path.exists(os.path.join(img_dir, img_name + '.jpg')):
             #print 'Missing image file {}'.format(img_name)
             img_missing.append(img_name)
@@ -54,14 +56,22 @@ def extract_bbox():
         output_file = os.path.join(output_dir, img_name + '.roi')
         with open(output_file, 'a') as f:
             for label in labels:
-                xmax = str(int(float(label['bndbox']['xmax']) / 320.0 * 720))
+                xmax = int(float(label['bndbox']['xmax']) / 320.0 * 720)
                 xmin = str(int(float(label['bndbox']['xmin']) / 320.0 * 720))
-                ymax = str(int(float(label['bndbox']['ymax']) / 240.0 * 576))
+                ymax = int(float(label['bndbox']['ymax']) / 240.0 * 576)
                 ymin = str(int(float(label['bndbox']['ymin']) / 240.0 * 576))
+                if xmax > 719:
+                    xmax = str(719)
+                else:
+                    xmax = str(xmax)
+                if ymax > 575:
+                    ymax = str(575)
+                else:
+                    ymax = str(ymax)
                 bbox = ' '.join([event, xmin, ymin, xmax, ymax])
                 f.write(bbox)
                 f.write('\n')
-        '''
+
     for event in all_events:
         print '{}: {}'.format(event, count_event[event])
     print 'Missing Image: ' + str(file_missed)
@@ -92,6 +102,6 @@ def check_missing_img():
     print 'Missing Images:', count
 
 if __name__ == '__main__':
-    #extract_bbox()
+    extract_bbox()
     #get_missing_img()
-    check_missing_img()
+    #check_missing_img()

@@ -1,11 +1,11 @@
 import os
 import shutil
-#import cv2
-#import toolkit
+import cv2
+import toolkit
 
-miss_file = '/home/yangc1/box_miss.txt'
-video_dir = '/home/yangc1/SED.raw/video/'
-output_dir = '/home/yangc1/videos/'
+miss_file = '/home/chenyang/sed/data/box_miss.txt'
+video_dir = '/home/chenyang/sed/data/videos/'
+output_dir = '/home/chenyang/sed/data/missing_img'
 
 def get_missing_box():
     extract_file = []
@@ -22,7 +22,7 @@ def get_missing_box():
             #else:
                 #print 'Can\'t find file ' + img_path
                 #extract_file.append(img_name)
-               
+            '''   
             date = int(data[1][-4:])
             if date <= 1112:
                 video_path = os.path.join(video_dir, 'Dev08-1')
@@ -37,9 +37,11 @@ def get_missing_box():
                 print 'Copying', video_file
                 shutil.copyfile(video_file, output_dir + sub_dir + '.avi')
             '''
+            video_file = os.path.join(video_dir, sub_dir + '.avi')
             cap = cv2.VideoCapture(video_file)
-            frameCnt = cap.get(cv2.cv.CV_CAP_PROP_FRAME_COUNT)
+            frameCnt = cap.get(cv2.CAP_PROP_FRAME_COUNT)
             frame = int(data[-1])
+            print frame, frameCnt
             if frame > frameCnt:
                 print 'frame overflow:', video_file, frame
                 continue
@@ -49,9 +51,30 @@ def get_missing_box():
             cv2.imwrite(outfile, img)
             print 'frame write:', img_name, frame
             cap.release()
-            '''
+
+anno_dir = '/home/chenyang/sed/data/Annotations/raw_bbox/'
+train_set = '/home/chenyang/lib/ImageSets/roi_train.txt'
+test_set = '/home/chenyang/lib/ImageSets/roi_test.txt'
+
+def remove_missing_box():
+    annos = os.listdir(anno_dir)
+    with open(miss_file) as f:
+        miss_imgs = f.read().splitlines() 
+    with open(train_set, 'w') as train, open(test_set, 'w') as test:
+        for anno in annos:
+            name, ext = os.path.splitext(anno)
+            if name in miss_imgs:
+                continue
+            data = name.split('_')
+            date = int(data[1][-4:])
+            if date > 1201:
+                test.write(name + '\n')
+            else:
+                train.write(name + '\n')
+
+
 
 
 if __name__ == '__main__':
-    get_missing_box()
-     
+    # get_missing_box()
+    remove_missing_box() 
