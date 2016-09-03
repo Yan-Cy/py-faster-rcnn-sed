@@ -119,13 +119,16 @@ def sed_eval(detpath,
     #        recs = cPickle.load(f)
 
     # extract gt objects for this class
+   
     class_recs = {}
     npos = 0
     for imagename in imagenames:
         R = [obj for obj in recs[imagename] if obj['name'] == classname]
+        # print imagename, classname, R
         bbox = np.array([x['bbox'] for x in R])
         difficult = np.array([x['difficult'] for x in R]).astype(np.bool)
         det = [False] * len(R)
+        # print difficult
         npos = npos + sum(~difficult)
         class_recs[imagename] = {'bbox': bbox,
                                  'difficult': difficult,
@@ -190,6 +193,7 @@ def sed_eval(detpath,
     # compute precision recall
     fp = np.cumsum(fp)
     tp = np.cumsum(tp)
+    # print fp, tp, npos
     rec = tp / float(npos)
     # avoid divide by zero in case the first detection matches a difficult
     # ground truth

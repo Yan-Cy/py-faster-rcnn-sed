@@ -7,7 +7,7 @@ img_missing = []
 def extract_bbox():
     root_dir = '/home/chenyang/sed/data/box'
     img_dir = '/home/chenyang/sed/data/Images'
-    output_dir = '/home/chenyang/sed/data/raw_bbox'
+    output_dir = '/home/chenyang/sed/data/Annotations/raw_bbox'
 
 
     file_missed = 0
