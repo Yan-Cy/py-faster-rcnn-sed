@@ -25,6 +25,7 @@ def draw_rect(results, file):
                 break
         img_dir = str(interval - 0.2) + '~' + str(interval)
 
+        # anno_file = os.path.join('/home/chenyang/Results/', file, 'all', image_name + '.jpg')
         anno_file = os.path.join('/home/chenyang/Results/', file, img_dir,  score + '__' + image_name + '.jpg')
         if os.path.exists(anno_file):
             image_file = anno_file
@@ -33,7 +34,8 @@ def draw_rect(results, file):
         image = Image.open(image_file)
         draw = ImageDraw.Draw(image)
         draw.rectangle([(x_min,y_min),(x_max,y_max)], outline='red')
-        draw.text([(x_min+x_max)/2.0,(y_min+y_max)/2.0], score, fill='red')
+        draw.text([x_min,y_min], score, fill='red')
+        draw.text([x_max,y_max], file, fill='red')
 
         gt_file = os.path.join(gt_path, image_name + '.roi')
         os.path.exists(gt_file)
@@ -48,7 +50,7 @@ def draw_rect(results, file):
             x2 = float(obj[3])
             y2 = float(obj[4])
             draw.rectangle([(x1,y1),(x2,y2)], outline='blue')
-            draw.text([x1,y1], score, fill='blue')
+            draw.text([x1,y1], cls, fill='blue')
 
         ''' Get from CellToEar.json
         with open(gt_file) as f:
