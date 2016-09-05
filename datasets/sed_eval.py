@@ -106,7 +106,7 @@ def sed_eval(detpath,
     recs = {}
     for i, imagename in enumerate(imagenames):
         recs[imagename] = parse_rec(annopath, imagename)
-        if i % 100 == 0:
+        if i % 1000 == 0:
             print 'Reading annotation for {:d}/{:d}'.format(
                 i + 1, len(imagenames))
     # save
