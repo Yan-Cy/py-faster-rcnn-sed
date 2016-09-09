@@ -2,20 +2,25 @@ import Image, ImageDraw
 import os
 import re
 
+output_path = '/home/chenyang/Results/'
+img_path = '/home/chenyang/py-faster-rcnn/data/sed/data/Images'
 gt_path = '/home/chenyang/sed/data/Annotations/roi/'
 result_dir = '/home/chenyang/py-faster-rcnn/data/sed/results/'
-files = ['VGG_Embrace', 'VGG_Pointing', 'VGG_CellToEar']
+classes = ['Embrace']
+threshold = 0.95
 intervals = [0.2, 0.4, 0.6, 0.8, 1.0]
 
 
-def draw_rect(results, file):
+def draw_dect(results, cls):
+    print 'Drawing {} detection bounding box to {}'.format(len(results), cls)
+    count = 0
     for result in results:
         [image_name, score, x_min, y_min, x_max, y_max] = re.split(' ', result)
-        x_min = float(x_min)
-        y_min = float(y_min)
-        x_max = float(x_max)
-        y_max = float(y_max)
-        image_file = os.path.join('/home/chenyang/py-faster-rcnn/data/sed/data/Images', image_name + '.jpg')
+        xmin = float(x_min)
+        ymin = float(y_min)
+        xmax = float(x_max)
+        ymax = float(y_max)
+        image_file = os.path.join(img_path, image_name + '.jpg')
         #print image_name
         #print image_file
         assert os.path.exists(image_file)
@@ -25,18 +30,25 @@ def draw_rect(results, file):
                 break
         img_dir = str(interval - 0.2) + '~' + str(interval)
 
-        # anno_file = os.path.join('/home/chenyang/Results/', file, 'all', image_name + '.jpg')
-        anno_file = os.path.join('/home/chenyang/Results/', file, img_dir,  score + '__' + image_name + '.jpg')
+        # anno_file = os.path.join(output_path, cls, 'all', image_name + '.jpg')
+        # anno_file = os.path.join(output_path, cls, img_dir,  score + '__' + image_name + '.jpg')
+        if float(score) < threshold:
+            continue
+        count = count + 1
+        #print output_path, cls, image_name,cls,x_min,y_min,x_max,y_max
+        anno_file = os.path.join(output_path, cls, 'refine', '_'.join([image_name,cls,str(int(xmin)),str(int(ymin)),str(int(xmax)),str(int(ymax))]) + '.jpg')
+        
         if os.path.exists(anno_file):
             image_file = anno_file
 
 
         image = Image.open(image_file)
         draw = ImageDraw.Draw(image)
-        draw.rectangle([(x_min,y_min),(x_max,y_max)], outline='red')
-        draw.text([x_min,y_min], score, fill='red')
-        draw.text([x_max,y_max], file, fill='red')
+        draw.rectangle([(xmin,ymin),(xmax,ymax)], outline='red')
+        draw.text([xmin,ymin], score, fill='red')
+        draw.text([xmax,ymax], cls, fill='red')
 
+        '''Draw ground truth box
         gt_file = os.path.join(gt_path, image_name + '.roi')
         os.path.exists(gt_file)
 
@@ -51,6 +63,7 @@ def draw_rect(results, file):
             y2 = float(obj[4])
             draw.rectangle([(x1,y1),(x2,y2)], outline='blue')
             draw.text([x1,y1], cls, fill='blue')
+        '''
 
         ''' Get from CellToEar.json
         with open(gt_file) as f:
@@ -73,15 +86,52 @@ def draw_rect(results, file):
 
         del draw
         image.save(anno_file, 'jpeg')
-     
+    print count
+
+file_set = '/home/chenyang/lib/ImageSets/test.txt'
+all_cls = ['CellToEar', 'Embrace', 'Pointing']
+
+
+def draw_box(file_set, gt_path, output_path, color):
+    print 'Drawing ground truth file in {}, from {}, to {}, in {}'.format(file_set, gt_path, output_path, color)
+    count = 0
+    with open(file_set) as f:
+        files = f.readlines()
+    for name in files:
+        name = name.strip()
+        gt_file = os.path.join(gt_path, name + '.roi')
+        os.path.exists(gt_file)
+        img_file = os.path.join(img_path, name + '.jpg')
+        
+        with open(gt_file) as f:
+            bboxes = f.readlines()
+        for bbox in bboxes:
+            bbox = bbox.strip()
+            bbox = bbox.split(' ')
+            
+            if bbox[0] not in all_cls:
+                continue
+            count = count + 1
+            output_file = os.path.join(output_path, bbox[0], 'refine', name + '_' + '_'.join(bbox)  + '.jpg')
+        
+            img = Image.open(img_file)
+            draw = ImageDraw.Draw(img)
+            draw.rectangle([(int(bbox[1]),int(bbox[2])),(int(bbox[3]),int(bbox[4]))], outline=color)
+            del draw
+            img.save(output_file, 'jpeg')
+    
+    print 'Total ground truth:', count
 
 if __name__ == '__main__':
-    for file in files:
-        result_file = os.path.join(result_dir, file + '.txt')
+     
+    for cls in classes:
+        result_file = os.path.join(result_dir, 'VGG_'+ cls + '.txt')
         os.path.exists(result_file)
         with open(result_file) as f:
             results = [x.strip() for x in f.readlines()]
-        draw_rect(results, file)
+        draw_dect(results, cls)
+    
+    # draw_box(file_set, gt_path, output_path, 'red')
     #assert os.path.exists(result_file)
 #with open(result_file) as f:
 #    results = [x.strip() for x in f.readlines()]
