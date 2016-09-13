@@ -22,6 +22,8 @@ import argparse
 import pprint
 import numpy as np
 import sys
+import os
+import cv2
 
 def parse_args():
     """
@@ -82,80 +84,6 @@ def combined_roidb(imdb_names):
         imdb = get_imdb(imdb_names)
     return imdb, roidb
 
-if __name__ == '__main__':
-    args = parse_args()
-
-    print('Called with args:')
-    print(args)
-
-    if args.cfg_file is not None:
-        cfg_from_file(args.cfg_file)
-    if args.set_cfgs is not None:
-        cfg_from_list(args.set_cfgs)
-
-    cfg.GPU_ID = args.gpu_id
-
-    print('Using config:')
-    pprint.pprint(cfg)
-
-    if not args.randomize:
-        # fix the random seeds (numpy and caffe) for reproducibility
-        np.random.seed(cfg.RNG_SEED)
-        caffe.set_random_seed(cfg.RNG_SEED)
-
-    # set up caffe
-    caffe.set_mode_gpu()
-    caffe.set_device(args.gpu_id)
-
-    imdb, roidb = combined_roidb(args.imdb_name)
-    print '{:d} roidb entries'.format(len(roidb))
-
-    output_dir = get_output_dir(imdb)
-    print 'Output will be saved to `{:s}`'.format(output_dir)
-
-    caffemodel = train_net(args.solver, roidb, output_dir,
-            pretrained_model=args.pretrained_model,
-            max_iters=args.max_iters)
-
-    # Do hard negative learning
-    iters = 1
-    hard_negs = []
-    threhold = 100
-    while True:
-        print iters, 'time training end.'
-        
-        net = caffe.Net(args.testprototxt, caffemodel[-1], caffe.TEST)
-        print '\n\nLoaded network {:s}'.format(caffemodel[-1])
-        
-        total_hardNeg = 0
-        for im_ind, im in enumerate(imdb):
-            scores, boxes = get_allboxes(im_detect(net, im))
-
-            if im_ind % 100 == 0:
-                print 'Get Hard Negatives: {}/{}'.format(im_ind, len(imdb))
-
-            gt_boxes = [roidb[im_ind]['boxes'], roidb[im_ind]['gt_classes']]
-            gt_ind = np.where(gt_boxes[-1] != 0)
-            gt_boxes = gt_boxes[gt_ind]
-
-            for box_ind, box in boxes:
-                if hardNeg_learning(score[box_ind], box, gt_boxes, roidb[im_ind]):
-                    total_hardNeg = total_harNeg + 1
-        
-        hard_negs.append(total_hardNeg)
-        print 'Total Hard Negative', total_hardNeg
-        if total_hardNeg < threshold:
-            print 'Done'
-            break
-        print 'Train recursively...'
-        
-        caffemodel = train_net(args.solver, roidb, output_dir,
-                pretrained_model=caffemodel,
-                max_iters=args.max_iters)
-        iters = iters + 1
-
-    print hard_negs
-
 def hardNeg_learning(score, box, gt_boxes, roidb):
     if score < 0.7:
         return False
@@ -188,4 +116,85 @@ def get_allboxes(scores, boxes):
         all_score[cls_ind * len(boxes) : (cls_ind+1) * len(boxes)] = dets[:, -1:]
 
     return all_score, all_box
+
+
+if __name__ == '__main__':
+    args = parse_args()
+
+    print('Called with args:')
+    print(args)
+
+    if args.cfg_file is not None:
+        cfg_from_file(args.cfg_file)
+    if args.set_cfgs is not None:
+        cfg_from_list(args.set_cfgs)
+
+    cfg.GPU_ID = args.gpu_id
+
+    print('Using config:')
+    pprint.pprint(cfg)
+
+    if not args.randomize:
+        # fix the random seeds (numpy and caffe) for reproducibility
+        np.random.seed(cfg.RNG_SEED)
+        caffe.set_random_seed(cfg.RNG_SEED)
+
+    # set up caffe
+    caffe.set_mode_gpu()
+    caffe.set_device(args.gpu_id)
+
+    imdb, roidb = combined_roidb(args.imdb_name)
+    print '{:d} roidb entries'.format(len(roidb))
+
+    output_dir = get_output_dir(imdb)
+    print 'Output will be saved to `{:s}`'.format(output_dir)
+
+    #caffemodel = train_net(args.solver, roidb, output_dir,
+    #        pretrained_model=args.pretrained_model,
+    #        max_iters=args.max_iters)
+
+    caffemodel = ['/home/chenyang/py-faster-rcnn/output/faster_rcnn_end2end/train/zf_faster_rcnn_iter_100.caffemodel']
+    # Do hard negative learning
+    
+    imgs = [os.path.join(imdb._data_path, 'Images', x + '.jpg') for x in imdb._image_set]
+    
+    iters = 1
+    hard_negs = []
+    threhold = 100
+    while True:
+        print iters, 'time training end.'
+        
+        net = caffe.Net(args.testprototxt, caffemodel[-1], caffe.TEST)
+        print '\n\nLoaded network {:s}'.format(caffemodel[-1])
+        
+        total_hardNeg = 0
+        for im_ind, im_file in enumerate(imgs):
+            print im_file
+            im = cv2.imread(im_file)
+            scores, boxes = get_allboxes(im_detect(net, im))
+
+            if im_ind % 100 == 0:
+                print 'Get Hard Negatives: {}/{}'.format(im_ind, len(imdb))
+
+            gt_boxes = [roidb[im_ind]['boxes'], roidb[im_ind]['gt_classes']]
+            gt_ind = np.where(gt_boxes[-1] != 0)
+            gt_boxes = gt_boxes[gt_ind]
+
+            for box_ind, box in boxes:
+                if hardNeg_learning(score[box_ind], box, gt_boxes, roidb[im_ind]):
+                    total_hardNeg = total_harNeg + 1
+        
+        hard_negs.append(total_hardNeg)
+        print 'Total Hard Negative', total_hardNeg
+        if total_hardNeg < threshold:
+            print 'Done'
+            break
+        print 'Train recursively...'
+        
+        caffemodel = train_net(args.solver, roidb, output_dir,
+                pretrained_model=caffemodel,
+                max_iters=args.max_iters)
+        iters = iters + 1
+
+    print hard_negs
 
