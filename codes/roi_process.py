@@ -19,14 +19,22 @@ def merge_roidb(roi_dbs):
                 f.write(f_roi.read())
 
 files = ['/home/chenyang/lib/ImageSets/train.txt', '/home/chenyang/lib/ImageSets/test.txt']
-src = ['/home/chenyang/sed/data/Annotations/refine/', '/home/chenyang/sed/data/Annotations/pose_roi/'] 
+# src = ['/home/chenyang/sed/data/Annotations/refine/', '/home/chenyang/sed/data/Annotations/pose_roi/'] 
+src = ['/home/chenyang/sed/data/Annotations/refine/']
 dst = '/home/chenyang/sed/data/Annotations/roi/'
 def extract_roidb(files, src, dst):
+    all_imgs = []
     for img_set in files:
         with open(img_set) as f:
             imgs = [x.strip() for x in f.readlines()]
         for img in imgs:
+            if img in all_imgs:
+                continue
+            all_imgs.append(img)
             found = 0
+            roi = os.path.join(dst, img + '.roi')
+            if os.path.exists(roi):
+                print img
             for roidb in src:
                 src_roi = os.path.join(roidb, img + '.roi')
                 if not os.path.exists(src_roi):
@@ -34,14 +42,13 @@ def extract_roidb(files, src, dst):
                 found = found + 1
 
                 src_file = open(src_roi)
-                roi = os.path.join(dst, img + '.roi')
-                if os.path.exists(roi):
-                    print img    
                 with open(roi, 'a') as f:
                     f.write(src_file.read())
 
             if found == 0:
                 print 'Not find roi of image {} from src'.format(img)
+                with open(roi, 'w') as f:
+                    f.write('')
 
 def filter_roidb(dst):
     roidbs = os.listdir(dst)
@@ -64,12 +71,12 @@ def filter_roidb(dst):
                 change = True
                 roi[4] = '575'
         if change:
-            print roidb
+            print 'refine -> ', roidb
             with open(roi_file, 'w') as f:
                 for roi in rois:
                     f.write(' '.join(roi) + '\n')
 
 if __name__ == '__main__':
     #merge_roidb(roi_dbs)
-    #extract_roidb(files, src, dst)
+    extract_roidb(files, src, dst)
     filter_roidb(dst)

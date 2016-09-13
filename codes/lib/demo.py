@@ -1,5 +1,17 @@
 #!/usr/bin/env python
 
+# --------------------------------------------------------
+# Faster R-CNN
+# Copyright (c) 2015 Microsoft
+# Licensed under The MIT License [see LICENSE for details]
+# Written by Ross Girshick
+# --------------------------------------------------------
+
+"""
+Demo script showing detections in sample images.
+
+See README.md for installation instructions before running.
+"""
 import _init_paths
 from fast_rcnn.config import cfg
 from fast_rcnn.test import im_detect

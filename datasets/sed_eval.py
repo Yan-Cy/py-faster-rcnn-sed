@@ -93,42 +93,39 @@ def sed_eval(detpath,
     # cachedir caches the annotations in a pickle file
 
     # first load gt
-    #if not os.path.isdir(cachedir):
-    #    os.mkdir(cachedir)
-    #cachefile = os.path.join(cachedir, 'annots.pkl')
+    if not os.path.isdir(cachedir):
+        os.mkdir(cachedir)
+    cachefile = os.path.join(cachedir, 'annots.pkl')
     # read list of images
     with open(imagesetfile, 'r') as f:
         lines = f.readlines()
     imagenames = [x.strip() for x in lines]
 
-    #if not os.path.isfile(cachefile):
-    #    # load annots
-    recs = {}
-    for i, imagename in enumerate(imagenames):
-        recs[imagename] = parse_rec(annopath, imagename)
-        if i % 1000 == 0:
-            print 'Reading annotation for {:d}/{:d}'.format(
-                i + 1, len(imagenames))
-    # save
-    #    print 'Saving cached annotations to {:s}'.format(cachefile)
-    #    with open(cachefile, 'w') as f:
-    #        cPickle.dump(recs, f)
-    #else:
-    #    # load
-    #    with open(cachefile, 'r') as f:
-    #        recs = cPickle.load(f)
+    if not os.path.isfile(cachefile):
+        # load annots
+        recs = {}
+        for i, imagename in enumerate(imagenames):
+            recs[imagename] = parse_rec(annopath, imagename)
+            if i % 100 == 0:
+                print 'Reading annotation for {:d}/{:d}'.format(
+                    i + 1, len(imagenames))
+        # save
+        print 'Saving cached annotations to {:s}'.format(cachefile)
+        with open(cachefile, 'w') as f:
+            cPickle.dump(recs, f)
+    else:
+        # load
+        with open(cachefile, 'r') as f:
+            recs = cPickle.load(f)
 
     # extract gt objects for this class
-   
     class_recs = {}
     npos = 0
     for imagename in imagenames:
         R = [obj for obj in recs[imagename] if obj['name'] == classname]
-        # print imagename, classname, R
         bbox = np.array([x['bbox'] for x in R])
         difficult = np.array([x['difficult'] for x in R]).astype(np.bool)
         det = [False] * len(R)
-        # print difficult
         npos = npos + sum(~difficult)
         class_recs[imagename] = {'bbox': bbox,
                                  'difficult': difficult,
@@ -193,7 +190,6 @@ def sed_eval(detpath,
     # compute precision recall
     fp = np.cumsum(fp)
     tp = np.cumsum(tp)
-    # print fp, tp, npos
     rec = tp / float(npos)
     # avoid divide by zero in case the first detection matches a difficult
     # ground truth

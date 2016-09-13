@@ -49,9 +49,10 @@ class ProposalTargetLayer(caffe.Layer):
         gt_boxes = all_boxes[gt_boxes_ins]
         negs_ins = np.where(all_boxes[: 4] == 0)
         negs = all_boxes[negs_ins]
-        print 'Number of Hard Negative: ', len(negs)
-        assert np.all(negs[:, 4] == 0), \
-                'Some hard Negative labels are not right'
+        # print 'Number of Hard Negative: ', len(negs)
+        if len(negs) > 0:
+            assert np.all(negs[:, 4] == 0), \
+                    'Some hard Negative labels are not right'
 
         # Include ground-truth boxes in the set of candidate rois
         zeros = np.zeros((gt_boxes.shape[0], 1), dtype=gt_boxes.dtype)
@@ -178,7 +179,7 @@ def _sample_rois(all_rois, gt_boxes, negs, fg_rois_per_image, rois_per_image, nu
                        (max_overlaps >= cfg.TRAIN.BG_THRESH_LO))[0]
     # Compute number of background RoIs to take from this image (guarding
     # against there being fewer than desired)
-    bg_rois_per_this_image = rois_per_image - fg_rois_per_this_image
+    bg_rois_per_this_image = rois_per_image - fg_rois_per_this_image - len(negs)
     bg_rois_per_this_image = min(bg_rois_per_this_image, bg_inds.size)
     # Sample background regions without replacement
     if bg_inds.size > 0:
@@ -192,10 +193,11 @@ def _sample_rois(all_rois, gt_boxes, negs, fg_rois_per_image, rois_per_image, nu
     labels[fg_rois_per_this_image:] = 0
     rois = all_rois[keep_inds]
 
-    zeros = np.zeros((negs.shape[0], 1), dtype=negs.dtype)
-    neg_rois = np.hstack((zeros, negs[:, :-1]))
-    labels = np.vstack((labels, negs[:,4]))
-    rois = np.vstack((rois, negs_rois))
+    if len(negs) > 0:
+        zeros = np.zeros((negs.shape[0], 1), dtype=negs.dtype)
+        neg_rois = np.hstack((zeros, negs[:, :-1]))
+        labels = np.vstack((labels, negs[:,4]))
+        rois = np.vstack((rois, negs_rois))
 
     bbox_target_data = _compute_targets(
         rois[:, 1:5], gt_boxes[gt_assignment[keep_inds], :4], labels)

@@ -29,8 +29,7 @@ class sed(imdb):
         self._classes = ('__background__', # always index 0
                          'Embrace',
                          'Pointing',
-                         'CellToEar',
-                         'Pose')
+                         'CellToEar')
         self._class_to_ind = dict(zip(self.classes, xrange(self.num_classes)))
         self._image_ext = ['.jpg', '.png']
         self._image_index = self._load_image_set_index()
@@ -38,7 +37,7 @@ class sed(imdb):
         self._comp_id = 'comp4'
 
         # Specific config options
-        self.config = {'cleanup'  : False,
+        self.config = {'cleanup'  : True,
                        'use_salt' : True,
                        'top_k'    : 2000,
                        'use_diff' : False,
@@ -87,62 +86,20 @@ class sed(imdb):
         Return the database of ground-truth regions of interest.
         This function loads/saves from/to a cache file to speed up future calls.
         """
-        #cache_file = os.path.join(self.cache_path, self.name + '_gt_roidb.pkl')
-        #if os.path.exists(cache_file):
-        #    with open(cache_file, 'rb') as fid:
-        #        roidb = cPickle.load(fid)
-        #    print '{} gt roidb loaded from {}'.format(self.name, cache_file)
-        #    return roidb
+        cache_file = os.path.join(self.cache_path, self.name + '_gt_roidb.pkl')
+        if os.path.exists(cache_file):
+            with open(cache_file, 'rb') as fid:
+                roidb = cPickle.load(fid)
+            print '{} gt roidb loaded from {}'.format(self.name, cache_file)
+            return roidb
 
         gt_roidb = [self._load_sed_annotation(index)
                     for index in self.image_index]
-        #with open(cache_file, 'wb') as fid:
-        #    cPickle.dump(gt_roidb, fid, cPickle.HIGHEST_PROTOCOL)
-        #print 'wrote gt roidb to {}'.format(cache_file)
+        with open(cache_file, 'wb') as fid:
+            cPickle.dump(gt_roidb, fid, cPickle.HIGHEST_PROTOCOL)
+        print 'wrote gt roidb to {}'.format(cache_file)
 
         return gt_roidb
-
-    def person_roidb(self):
-        gt_roidb = self.gt_roidb()
-        person_roidb = self._load_person_roidb(gt_roidb)
-        roidb = imdb.merge_roidbs(gt_roidb, person_roidb)
-        return roidb
-
-    def _load_person_roidb(self, gt_roidb):
-        box_list = [self._load_person_boundingbox(index) for index in sed.image_index]
-        return self.create_roidb_from_box_list(box_list, gt_roidb) 
-
-    def _load_person_boundingbox(self, index):
-        """
-        Load pretobtained image person bounding box info from txt files of sed.
-        """
-        filename = os.path.join(self._data_path, 'Annotations', 'person', index + '.npy')
-        assert os.path.exists(filename), \
-                'person data not found at: {}'.format(filename)
- 
-        with open(filename) as f:
-            data = f.read()
-        import re
-        #TODO
-        objs = re.findall('(\d+) (\d+) (\d+) (\d+)', data)
-       
-        boxes = np.zeros((num_objs, 4), dtype=np.uint16)
-
-        # Load object bounding boxes into a data frame.
-        for ix, obj in enumerate(objs):
-            x1 = float(obj[0])
-            y1 = float(obj[1])
-            x2 = float(obj[2])
-            y2 = float(obj[3])
-            #print x1, y1, x2, y2
-            boxes[ix, :] = [x1, y1, x2, y2]
-
-        keep = ds_utils.unique_boxes(boxes)
-        boxes = boxes[keep, :]
-        keep = ds_utils.filter_small_boxes(boxes, self.config['min_size'])
-        boxes = boxes[keep, :]
-
-        return boxes 
 
     def rpn_roidb(self):
         gt_roidb = self.gt_roidb()
@@ -213,6 +170,7 @@ class sed(imdb):
                 for im_ind, index in enumerate(self.image_index):
                     dets = all_boxes[cls_ind][im_ind]
                     if dets == []:
+                        #print cls_ind, im_ind
                         continue
                     # the VOCdevkit expects 1-based indices
                     for k in xrange(dets.shape[0]):
@@ -229,7 +187,7 @@ class sed(imdb):
                 if cls == '__background__':
                     continue
                 filename = self._get_results_file_template().format(cls)
-                os.remove(filename)
+                #os.remove(filename)
 
     def _get_comp_id(self):
         comp_id = (self._comp_id + '_' + self._salt if self.config['use_salt']

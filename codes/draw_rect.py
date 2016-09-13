@@ -6,8 +6,8 @@ output_path = '/home/chenyang/Results/'
 img_path = '/home/chenyang/py-faster-rcnn/data/sed/data/Images'
 gt_path = '/home/chenyang/sed/data/Annotations/roi/'
 result_dir = '/home/chenyang/py-faster-rcnn/data/sed/results/'
-classes = ['Embrace']
-threshold = 0.95
+classes = ['Embrace', 'Pointing', 'CellToEar', 'Pose']
+threshold = 0.0
 intervals = [0.2, 0.4, 0.6, 0.8, 1.0]
 
 
@@ -31,12 +31,12 @@ def draw_dect(results, cls):
         img_dir = str(interval - 0.2) + '~' + str(interval)
 
         # anno_file = os.path.join(output_path, cls, 'all', image_name + '.jpg')
-        # anno_file = os.path.join(output_path, cls, img_dir,  score + '__' + image_name + '.jpg')
+        anno_file = os.path.join(output_path, cls, img_dir,  score + '__' + image_name + '.jpg')
         if float(score) < threshold:
             continue
         count = count + 1
         #print output_path, cls, image_name,cls,x_min,y_min,x_max,y_max
-        anno_file = os.path.join(output_path, cls, 'refine', '_'.join([image_name,cls,str(int(xmin)),str(int(ymin)),str(int(xmax)),str(int(ymax))]) + '.jpg')
+        # anno_file = os.path.join(output_path, cls, 'refine', '_'.join([image_name,cls,str(int(xmin)),str(int(ymin)),str(int(xmax)),str(int(ymax))]) + '.jpg')
         
         if os.path.exists(anno_file):
             image_file = anno_file
@@ -48,7 +48,7 @@ def draw_dect(results, cls):
         draw.text([xmin,ymin], score, fill='red')
         draw.text([xmax,ymax], cls, fill='red')
 
-        '''Draw ground truth box
+        '''Draw ground truth box'''
         gt_file = os.path.join(gt_path, image_name + '.roi')
         os.path.exists(gt_file)
 
@@ -63,7 +63,6 @@ def draw_dect(results, cls):
             y2 = float(obj[4])
             draw.rectangle([(x1,y1),(x2,y2)], outline='blue')
             draw.text([x1,y1], cls, fill='blue')
-        '''
 
         ''' Get from CellToEar.json
         with open(gt_file) as f:
@@ -89,7 +88,7 @@ def draw_dect(results, cls):
     print count
 
 file_set = '/home/chenyang/lib/ImageSets/test.txt'
-all_cls = ['CellToEar', 'Embrace', 'Pointing']
+all_cls = ['CellToEar', 'Embrace', 'Pointing', 'Pose']
 
 
 def draw_box(file_set, gt_path, output_path, color):
@@ -125,7 +124,7 @@ def draw_box(file_set, gt_path, output_path, color):
 if __name__ == '__main__':
      
     for cls in classes:
-        result_file = os.path.join(result_dir, 'VGG_'+ cls + '.txt')
+        result_file = os.path.join(result_dir, 'zf_'+ cls + '.txt')
         os.path.exists(result_file)
         with open(result_file) as f:
             results = [x.strip() for x in f.readlines()]
