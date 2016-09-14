@@ -213,7 +213,7 @@ if __name__ == '__main__':
        
         # print len(roidb)
         caffemodel = train_net(args.solver, roidb, output_dir,
-                pretrained_model=caffemodel[-1],
+                pretrained_model=str(caffemodel[-1]),
                 max_iters=args.max_iters)
         iters = iters + 1
 
