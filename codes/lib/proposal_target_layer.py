@@ -47,8 +47,10 @@ class ProposalTargetLayer(caffe.Layer):
 
         gt_boxes_ins = np.where(all_boxes[:, 4] != 0)
         gt_boxes = all_boxes[gt_boxes_ins]
-        negs_ins = np.where(all_boxes[: 4] == 0)
+        negs_ins = np.where(all_boxes[:, 4] == 0)
         negs = all_boxes[negs_ins]
+        # print negs.shape
+        # print gt_boxes.shape
         # print 'Number of Hard Negative: ', len(negs)
         if len(negs) > 0:
             assert np.all(negs[:, 4] == 0), \
@@ -141,6 +143,8 @@ def _get_bbox_regression_labels(bbox_target_data, num_classes):
 def _compute_targets(ex_rois, gt_rois, labels):
     """Compute bounding-box regression targets for an image."""
 
+    #print ex_rois.shape
+    #print gt_rois.shape
     assert ex_rois.shape[0] == gt_rois.shape[0]
     assert ex_rois.shape[1] == 4
     assert gt_rois.shape[1] == 4
@@ -179,7 +183,7 @@ def _sample_rois(all_rois, gt_boxes, negs, fg_rois_per_image, rois_per_image, nu
                        (max_overlaps >= cfg.TRAIN.BG_THRESH_LO))[0]
     # Compute number of background RoIs to take from this image (guarding
     # against there being fewer than desired)
-    bg_rois_per_this_image = rois_per_image - fg_rois_per_this_image - len(negs)
+    bg_rois_per_this_image = max(0, rois_per_image - fg_rois_per_this_image - len(negs))
     bg_rois_per_this_image = min(bg_rois_per_this_image, bg_inds.size)
     # Sample background regions without replacement
     if bg_inds.size > 0:
@@ -196,8 +200,8 @@ def _sample_rois(all_rois, gt_boxes, negs, fg_rois_per_image, rois_per_image, nu
     if len(negs) > 0:
         zeros = np.zeros((negs.shape[0], 1), dtype=negs.dtype)
         neg_rois = np.hstack((zeros, negs[:, :-1]))
-        labels = np.vstack((labels, negs[:,4]))
-        rois = np.vstack((rois, negs_rois))
+        labels = np.concatenate((labels, negs[:, 4]))
+        rois = np.concatenate((rois, neg_rois))
 
     bbox_target_data = _compute_targets(
         rois[:, 1:5], gt_boxes[gt_assignment[keep_inds], :4], labels)
