@@ -24,6 +24,7 @@ import numpy as np
 import sys
 import os
 import cv2
+import scipy
 
 def parse_args():
     """
@@ -74,8 +75,10 @@ def combined_roidb(imdb_names):
         roidb = get_training_roidb(imdb)
         return roidb
 
+    # print imdb_names.split('+')
     roidbs = [get_roidb(s) for s in imdb_names.split('+')]
     roidb = roidbs[0]
+    print 'combined_roidb ------->', len(roidb)
     if len(roidbs) > 1:
         for r in roidbs[1:]:
             roidb.extend(r)
@@ -84,36 +87,50 @@ def combined_roidb(imdb_names):
         imdb = get_imdb(imdb_names)
     return imdb, roidb
 
+CLASSES = ['__background__', 'Embrace', 'Pointing', 'CellToEar']
 def hardNeg_learning(score, box, gt_boxes, roidb):
     if score < 0.7:
         return False
+    #print score
+    #print box
+    #print gt_boxes
     overlaps = bbox_overlaps(
         np.ascontiguousarray([box], dtype=np.float),
         np.ascontiguousarray(gt_boxes[:, :4], dtype=np.float))
+    overlap = np.zeros(len(CLASSES), dtype=np.float32)
+    overlap[0] = 1.0
+    for ind, cls in enumerate(CLASSES[1:]):
+        ind = ind + 1
+        cls_overlap = [y for x, y in enumerate(overlaps[0]) if gt_boxes[x,-1] == ind]
+        if len(cls_overlap) > 0:
+            overlap[ind] = np.max(cls_overlap)
+       
+    # print scipy.sparse.csr_matrix(roidb['gt_overlaps']).toarray() 
+    # print overlap
+
     max_overlaps = overlaps.max(axis=1)
-    
     if max_overlaps[0] >= cfg.TRAIN.FG_THRESH:
         return False
-    roidb['boxes'].append(box)
-    roidb['gt_classes'].append(0)
-    roidb['gt_overlaps'].append(overlaps[0])
-    roidb['seg_areas'].append(box[2] - box[0] + 1) * (box[3] - box[1] + 1) 
+    
+    roidb['boxes'] = np.append(roidb['boxes'], [box], axis=0)
+    roidb['gt_classes'] = np.append(roidb['gt_classes'], [0], axis=0)
+    roidb['gt_overlaps'] = scipy.sparse.csr_matrix(np.append(scipy.sparse.csr_matrix(roidb['gt_overlaps']).toarray(), [overlap], axis=0))
+    roidb['seg_areas'] = np.append(roidb['seg_areas'], [(box[2] - box[0] + 1) * (box[3] - box[1] + 1)], axis=0) 
+    
+    # print roidb
     return True 
 
-CLASSES = ['__background__', 'Embrace', 'Pointing', 'CellToEar']
 def get_allboxes(scores, boxes):
     num_box = len(boxes) * (len(CLASSES) - 1)
     all_score = np.zeros((num_box), dtype=np.float)
     all_box = np.zeros((num_box, 4), dtype=np.float)
     for cls_ind, cls in enumerate(CLASSES[1:]):
-        cls_ind += 1 # because we skipped background
-        cls_boxes = boxes[:, 4*cls_ind:4*(cls_ind + 1)]
+        cls_boxes = boxes[:, 4*(cls_ind+1):4*(cls_ind + 2)]
         cls_scores = scores[:, cls_ind]
-        dets = np.hstack((cls_boxes, cls_scores[:, np.newaxis])).astype(np.float32)
-        keep = nms(dets, NMS_THRESH)
-        dets = dets[keep, :]
-        all_box[cls_ind * len(boxes) : (cls_ind+1) * len(boxes), :] = dets[:, :4]
-        all_score[cls_ind * len(boxes) : (cls_ind+1) * len(boxes)] = dets[:, -1:]
+        #print all_box.shape, cls_boxes.shape
+        #print cls_ind * len(boxes),  (cls_ind+1) * len(boxes)
+        all_box[cls_ind * len(boxes) : (cls_ind+1) * len(boxes), :] = cls_boxes[:, :]
+        all_score[cls_ind * len(boxes) : (cls_ind+1) * len(boxes)] = cls_scores[:]
 
     return all_score, all_box
 
@@ -149,40 +166,43 @@ if __name__ == '__main__':
     output_dir = get_output_dir(imdb)
     print 'Output will be saved to `{:s}`'.format(output_dir)
 
-    #caffemodel = train_net(args.solver, roidb, output_dir,
-    #        pretrained_model=args.pretrained_model,
-    #        max_iters=args.max_iters)
+    caffemodel = train_net(args.solver, roidb, output_dir,
+            pretrained_model=args.pretrained_model,
+            max_iters=args.max_iters)
 
-    caffemodel = ['/home/chenyang/py-faster-rcnn/output/faster_rcnn_end2end/train/zf_faster_rcnn_iter_100.caffemodel']
+    #caffemodel = ['/home/chenyang/py-faster-rcnn/output/faster_rcnn_end2end/train/zf_faster_rcnn_iter_100.caffemodel']
     # Do hard negative learning
-    
-    imgs = [os.path.join(imdb._data_path, 'Images', x + '.jpg') for x in imdb._image_set]
-    
+   
+    imgs = [os.path.join(imdb._data_path, 'Images', x + '.jpg') for x in imdb._image_index]
+
     iters = 1
     hard_negs = []
-    threhold = 100
+    threshold = 100
     while True:
         print iters, 'time training end.'
-        
-        net = caffe.Net(args.testprototxt, caffemodel[-1], caffe.TEST)
+        print caffemodel 
+        net = caffe.Net(args.testprototxt, str(caffemodel[-1]), caffe.TEST)
         print '\n\nLoaded network {:s}'.format(caffemodel[-1])
-        
+       
         total_hardNeg = 0
         for im_ind, im_file in enumerate(imgs):
             print im_file
             im = cv2.imread(im_file)
-            scores, boxes = get_allboxes(im_detect(net, im))
-
+            all_score, all_boxes = im_detect(net, im)
+            scores, boxes = get_allboxes(all_score, all_boxes)
+            
+            print 'Total proposal: ', len(boxes)
             if im_ind % 100 == 0:
-                print 'Get Hard Negatives: {}/{}'.format(im_ind, len(imdb))
-
-            gt_boxes = [roidb[im_ind]['boxes'], roidb[im_ind]['gt_classes']]
-            gt_ind = np.where(gt_boxes[-1] != 0)
+                print 'Get Hard Negatives: {}/{}'.format(im_ind, len(imgs))
+            
+            # print roidb[im_ind]['boxes'].shape, roidb[im_ind]['gt_classes'].shape
+            gt_boxes = np.column_stack((roidb[im_ind]['boxes'], roidb[im_ind]['gt_classes']))
+            gt_ind = np.where(gt_boxes[:, -1] != 0)
             gt_boxes = gt_boxes[gt_ind]
 
-            for box_ind, box in boxes:
-                if hardNeg_learning(score[box_ind], box, gt_boxes, roidb[im_ind]):
-                    total_hardNeg = total_harNeg + 1
+            for box_ind, box in enumerate(boxes):
+                if hardNeg_learning(scores[box_ind], box, gt_boxes, roidb[im_ind]):
+                    total_hardNeg = total_hardNeg + 1
         
         hard_negs.append(total_hardNeg)
         print 'Total Hard Negative', total_hardNeg
@@ -190,9 +210,10 @@ if __name__ == '__main__':
             print 'Done'
             break
         print 'Train recursively...'
-        
+       
+        # print len(roidb)
         caffemodel = train_net(args.solver, roidb, output_dir,
-                pretrained_model=caffemodel,
+                pretrained_model=caffemodel[-1],
                 max_iters=args.max_iters)
         iters = iters + 1
 
