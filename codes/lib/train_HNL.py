@@ -87,7 +87,12 @@ def combined_roidb(imdb_names):
         imdb = get_imdb(imdb_names)
     return imdb, roidb
 
+delta = 10
 def IoU(box1, box2):
+    if box1[0]-delta < box2[0] and box1[2]+delta > box2[2] and box1[1]-delta < box2[1] and box1[3]+delta > box2[3]:
+        return 1
+    if box2[0]-delta < box1[0] and box2[2]+delta > box1[2] and box2[1]-delta < box1[1] and box2[3]+delta > box1[3]:
+        return 1
     Intersect = (min(box1[2], box2[2]) - max(box1[0], box2[0])) * (min(box1[3], box2[3]) - max(box1[1], box2[1]))
     if Intersect <= 0:
         Intersect = 0.0
@@ -95,7 +100,7 @@ def IoU(box1, box2):
     assert Union >= 0
     return Intersect / Union
 
-FG_THRESH = 0.3
+FG_THRESH = 0.5
 CLASSES = ['__background__', 'Embrace', 'Pointing', 'CellToEar']
 def hardNeg_learning(score, box, gt_boxes, roidb):
     '''
