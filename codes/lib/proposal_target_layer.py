@@ -197,14 +197,22 @@ def _sample_rois(all_rois, gt_boxes, negs, fg_rois_per_image, rois_per_image, nu
     labels[fg_rois_per_this_image:] = 0
     rois = all_rois[keep_inds]
 
+    selected_gt_boxes = gt_boxes[gt_assignment[keep_inds], :4]
+
     if len(negs) > 0:
         zeros = np.zeros((negs.shape[0], 1), dtype=negs.dtype)
         neg_rois = np.hstack((zeros, negs[:, :-1]))
         labels = np.concatenate((labels, negs[:, 4]))
         rois = np.concatenate((rois, neg_rois))
+        
+        hn_overlaps = bbox_overlaps(
+            np.ascontiguousarray(negs[:, :4], dtype=np.float),
+            np.ascontiguousarray(gt_boxes[:, :4], dtype=np.float))
+        hn_assignment = hn_overlaps.argmax(axis=1)
+        selected_gt_boxes = np.concatenate((selected_gt_boxes, gt_boxes[hn_assignment, :4]))
 
     bbox_target_data = _compute_targets(
-        rois[:, 1:5], gt_boxes[gt_assignment[keep_inds], :4], labels)
+        rois[:, 1:5], selected_gt_boxes, labels)
 
     bbox_targets, bbox_inside_weights = \
         _get_bbox_regression_labels(bbox_target_data, num_classes)
