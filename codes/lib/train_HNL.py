@@ -87,13 +87,42 @@ def combined_roidb(imdb_names):
         imdb = get_imdb(imdb_names)
     return imdb, roidb
 
+def IoU(box1, box2):
+    Intersect = (min(box1[2], box2[2]) - max(box1[0], box2[0])) * (min(box1[3], box2[3]) - max(box1[1], box2[1]))
+    if Intersect <= 0:
+        Intersect = 0.0
+    Union = (box1[2]-box1[0])*(box1[3]-box1[1]) + (box2[2]-box2[0])*(box2[3]-box2[1]) - Intersect
+    assert Union >= 0
+    return Intersect / Union
+
+FG_THRESH = 0.3
 CLASSES = ['__background__', 'Embrace', 'Pointing', 'CellToEar']
 def hardNeg_learning(score, box, gt_boxes, roidb):
+    '''
+    judge if a box is a hard negative example, add it to roidb if true
+    '''
     if score < 0.7:
         return False
     #print score
     #print box
     #print gt_boxes
+    for gt_box in gt_boxes:
+        assert gt_box[-1] != 0
+        if IoU(box, gt_box[:4]) > FG_THRESH:
+            return False
+    
+    ''' Debug 
+    for gt_box in gt_boxes:
+        assert gt_box[-1] != 0
+        print IoU(box, gt_box[:4])
+    
+    print '-------------------------------' 
+    print box
+    print score
+    print gt_boxes
+    print '-------------------------------'
+    '''
+    
     overlaps = bbox_overlaps(
         np.ascontiguousarray([box], dtype=np.float),
         np.ascontiguousarray(gt_boxes[:, :4], dtype=np.float))
@@ -104,14 +133,7 @@ def hardNeg_learning(score, box, gt_boxes, roidb):
         cls_overlap = [y for x, y in enumerate(overlaps[0]) if gt_boxes[x,-1] == ind]
         if len(cls_overlap) > 0:
             overlap[ind] = np.max(cls_overlap)
-       
-    # print scipy.sparse.csr_matrix(roidb['gt_overlaps']).toarray() 
-    # print overlap
 
-    max_overlaps = overlaps.max(axis=1)
-    if max_overlaps[0] >= cfg.TRAIN.FG_THRESH:
-        return False
-    
     roidb['boxes'] = np.append(roidb['boxes'], [box], axis=0)
     roidb['gt_classes'] = np.append(roidb['gt_classes'], [0], axis=0)
     roidb['gt_overlaps'] = scipy.sparse.csr_matrix(np.append(scipy.sparse.csr_matrix(roidb['gt_overlaps']).toarray(), [overlap], axis=0))
@@ -121,12 +143,21 @@ def hardNeg_learning(score, box, gt_boxes, roidb):
     return True 
 
 def get_allboxes(scores, boxes):
+    '''
+        extract scores and boxes from detected data, except boxes of background
+        scores: [N, K], i*4~(i+1)*4 is box for class i
+        boxes:  [N, K * 4]
+        K is the class number
+        return:
+            all_score: [N * (k - 1)]
+            boxes:     [N * (k - 1), 4]
+    '''
     num_box = len(boxes) * (len(CLASSES) - 1)
     all_score = np.zeros((num_box), dtype=np.float)
     all_box = np.zeros((num_box, 4), dtype=np.float)
     for cls_ind, cls in enumerate(CLASSES[1:]):
-        cls_boxes = boxes[:, 4*(cls_ind+1):4*(cls_ind + 2)]
-        cls_scores = scores[:, cls_ind]
+        cls_boxes = boxes[:, 4*(cls_ind + 1) : 4*(cls_ind + 2)]
+        cls_scores = scores[:, cls_ind + 1]
         #print all_box.shape, cls_boxes.shape
         #print cls_ind * len(boxes),  (cls_ind+1) * len(boxes)
         all_box[cls_ind * len(boxes) : (cls_ind+1) * len(boxes), :] = cls_boxes[:, :]
@@ -170,14 +201,14 @@ if __name__ == '__main__':
             pretrained_model=args.pretrained_model,
             max_iters=args.max_iters)
 
-    #caffemodel = ['/home/chenyang/py-faster-rcnn/output/faster_rcnn_end2end/train/zf_faster_rcnn_iter_100.caffemodel']
+    # caffemodel = ['/home/chenyang/py-faster-rcnn/output/faster_rcnn_end2end/train/zf_faster_rcnn_iter_100.caffemodel']
     # Do hard negative learning
    
     imgs = [os.path.join(imdb._data_path, 'Images', x + '.jpg') for x in imdb._image_index]
 
     iters = 1
     hard_negs = []
-    threshold = 100
+    threshold = 1
     while True:
         print iters, 'time training end.'
         print caffemodel 
@@ -186,7 +217,7 @@ if __name__ == '__main__':
        
         total_hardNeg = 0
         for im_ind, im_file in enumerate(imgs):
-            print im_file
+            # print 'Get hard negatives from', im_file
             im = cv2.imread(im_file)
             all_score, all_boxes = im_detect(net, im)
             scores, boxes = get_allboxes(all_score, all_boxes)
