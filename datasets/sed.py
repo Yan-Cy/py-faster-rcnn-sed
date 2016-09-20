@@ -29,7 +29,9 @@ class sed(imdb):
         self._classes = ('__background__', # always index 0
                          'Embrace',
                          'Pointing',
-                         'CellToEar')
+                         'CellToEar',
+                         'Pose'
+                         )
         self._class_to_ind = dict(zip(self.classes, xrange(self.num_classes)))
         self._image_ext = ['.jpg', '.png']
         self._image_index = self._load_image_set_index()
@@ -181,13 +183,14 @@ class sed(imdb):
 
     def evaluate_detections(self, all_boxes, output_dir):
         self._write_results_file(all_boxes)
-        self._do_python_eval(output_dir)
+        aps = self._do_python_eval(output_dir)
         if self.config['cleanup']:
             for cls in self._classes:
                 if cls == '__background__':
                     continue
                 filename = self._get_results_file_template().format(cls)
                 #os.remove(filename)
+        return aps
 
     def _get_comp_id(self):
         comp_id = (self._comp_id + '_' + self._salt if self.config['use_salt']
@@ -246,3 +249,5 @@ class sed(imdb):
         print('Recompute with `./tools/reval.py --matlab ...` for your paper.')
         print('-- Thanks, The Management')
         print('--------------------------------------------------------------')
+
+        return aps
