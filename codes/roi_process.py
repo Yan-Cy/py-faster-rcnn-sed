@@ -18,24 +18,49 @@ def merge_roidb(roi_dbs):
             with open(final_roi, 'a') as f:
                 f.write(f_roi.read())
 
-files = ['/home/chenyang/sed/data/ImageSets/train.txt', '/home/chenyang/sed/data/ImageSets/test.txt']
+files = ['/home/chenyang/sed/data/ImageSets/refine_train.txt', '/home/chenyang/sed/data/ImageSets/refine_test.txt']
+person_files = ['/home/chenyang/sed/data/ImageSets/pose_train.txt', '/home/chenyang/sed/data/ImageSets/pose_test.txt']
 src = ['/home/chenyang/sed/data/Annotations/refine/', '/home/chenyang/sed/data/Annotations/pose_roi/'] 
 #src = ['/home/chenyang/sed/data/Annotations/refine_jia/', '/home/chenyang/sed/data/Annotations/pose_roi/']
 #src = ['/home/chenyang/sed/data/Annotations/refine/']
 dst = '/home/chenyang/sed/data/Annotations/roi/'
-def extract_roidb(files, src, dst):
-    all_imgs = []
+ctr = '/home/chenyang/sed/raw/txt/'
+all_imgs = []
+def extract_roidb(files, src, dst, ctr = None):
+    print 'extract_roidb', files, src, dst, ctr
+    count = 0
+    pair_count = 0
     for img_set in files:
         with open(img_set) as f:
             imgs = [x.strip() for x in f.readlines()]
         for img in imgs:
             if img in all_imgs:
                 continue
+            #all_imgs.append(img)
+
+            if ctr != None:
+                data = img.split('_')
+                ctr_file = os.path.join(ctr, '_'.join(data[:-1]) + '.txt')
+                frame = int(data[-1])
+                with open(ctr_file) as f:
+                    frame_sets = re.findall('(\S+) (\d+) (\d+)', f.read())
+                frame_sets = [[int(x[1]), int(x[2])] for x in frame_sets]
+                paired = False
+                for frame_set in frame_sets:
+                    if frame_set[0] <= frame and frame_set[1] >= frame:
+                        #print frame, frame_set
+                        pair_count = pair_count + 1
+                        paired = True
+                        break
+                if paired:
+                    continue
+
             all_imgs.append(img)
+
             found = 0
             roi = os.path.join(dst, img + '.roi')
-            if os.path.exists(roi):
-                print img
+            #if os.path.exists(roi):
+            #    print img
             for roidb in src:
                 src_roi = os.path.join(roidb, img + '.roi')
                 if not os.path.exists(src_roi):
@@ -52,6 +77,10 @@ def extract_roidb(files, src, dst):
                 print 'Not find roi of image {} from src'.format(img)
                 with open(roi, 'w') as f:
                     f.write('')
+            count = count + 1
+
+    print 'Extracted {} roidbs'.format(count)
+    print 'Filtered {} roidbs'.format(pair_count)
 
 delta = 5
 def IoU(box1, box2):
@@ -121,7 +150,29 @@ def filter_roidb(dst):
                 for roi in rois:
                     f.write(' '.join(roi) + '\n')
 
+imageset_path = '/home/chenyang/lib/ImageSets/'
+def generate_imageset(imageset_path):
+    train = open(os.path.join(imageset_path, 'train.txt'), 'w')
+    train_count = 0
+    test = open(os.path.join(imageset_path, 'test.txt'), 'w')
+    test_count = 0
+    for img in all_imgs:
+        data = img.split('_')
+        date = int(data[1][-4:])
+        if date < 1201:
+            train.write(img + '\n')
+            train_count = train_count + 1
+        else:
+            test.write(img + '\n')
+            test_count = test_count + 1
+
+    print 'Total training images:', train_count
+    print 'Total testing images:', test_count
+
 if __name__ == '__main__':
     #merge_roidb(roi_dbs)
-    #extract_roidb(files, src, dst)
+    extract_roidb(files, src, dst)
+    #filter_roidb(dst)
+    extract_roidb(person_files, src, dst, ctr)
     filter_roidb(dst)
+    generate_imageset(imageset_path)

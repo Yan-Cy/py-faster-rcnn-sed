@@ -110,7 +110,7 @@ def IoU(box1, box2):
     return Intersect / Union
 
 FG_THRESH = 0.5
-CLASSES = ['__background__', 'Embrace', 'Pointing', 'CellToEar', 'Pose']
+CLASSES = ['__background__', 'Embrace', 'Pointing', 'CellToEar']#, 'Pose']
 def hardNeg_learning(score, box, gt_boxes, roidb):
     '''
     judge if a box is a hard negative example, add it to roidb if true
@@ -211,18 +211,18 @@ if __name__ == '__main__':
     output_dir = get_output_dir(imdb)
     print 'Output will be saved to `{:s}`'.format(output_dir)
 
-    #caffemodel = train_net(args.solver, roidb_ori, output_dir,
-    #        pretrained_model=args.pretrained_model,
-    #        max_iters=args.max_iters)
+    caffemodel = train_net(args.solver, roidb_ori, output_dir,
+            pretrained_model=args.pretrained_model,
+            max_iters=args.max_iters)
 
     #caffemodel = ['/home/chenyang/py-faster-rcnn/output/faster_rcnn_end2end/train/zf_faster_rcnn_iter_10000.caffemodel']
     #caffemodel = ['/home/chenyang/py-faster-rcnn/output/faster_rcnn_end2end/train/zf_HNL_4cls.caffemodel']
-    caffemodel = ['/home/chenyang/py-faster-rcnn/output/faster_rcnn_end2end/train/HNL_zf_iter_10000.caffemodel']
+    #caffemodel = ['/home/chenyang/py-faster-rcnn/output/faster_rcnn_end2end/train/HNL_zf_iter_10000.caffemodel']
     # Do hard negative learning
    
     imgs = [os.path.join(imdb._data_path, 'Images', x + '.jpg') for x in imdb._image_index]
 
-    log_file = '/home/chenyang/lib/log/result_4cls.txt'
+    log_file = '/home/chenyang/lib/log/result_3cls_std.txt'
     iters = 1
     hard_negs = []
     threshold = 1

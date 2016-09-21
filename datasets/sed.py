@@ -30,7 +30,7 @@ class sed(imdb):
                          'Embrace',
                          'Pointing',
                          'CellToEar',
-                         'Pose'
+                         #'Pose'
                          )
         self._class_to_ind = dict(zip(self.classes, xrange(self.num_classes)))
         self._image_ext = ['.jpg', '.png']
@@ -147,10 +147,14 @@ class sed(imdb):
             y2 = float(obj[4])
             #print x1, y1, x2, y2
             file_cls = obj[0]
-            cls = self._class_to_ind[file_cls]
+            if self._class_to_ind.has_key(file_cls):
+                cls = self._class_to_ind[file_cls]
+                overlaps[ix, cls] = 1.0
+            else:
+                cls = 0
             boxes[ix, :] = [x1, y1, x2, y2]
             gt_classes[ix] = cls
-            overlaps[ix, cls] = 1.0
+            #overlaps[ix, cls] = 1.0
             seg_areas[ix] = (x2 - x1 + 1) * (y2 - y1 + 1)
 
         overlaps = scipy.sparse.csr_matrix(overlaps)
