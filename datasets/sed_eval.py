@@ -136,6 +136,8 @@ def sed_eval(detpath,
     with open(detfile, 'r') as f:
         lines = f.readlines()
 
+    #lines = [x for x in lines if float(x.strip().split(' ')[1]) > 0.8]
+
     splitlines = [x.strip().split(' ') for x in lines]
     image_ids = [x[0] for x in splitlines]
     confidence = np.array([float(x[1]) for x in splitlines])
@@ -190,6 +192,7 @@ def sed_eval(detpath,
     # compute precision recall
     fp = np.cumsum(fp)
     tp = np.cumsum(tp)
+    print npos
     rec = tp / float(npos)
     # avoid divide by zero in case the first detection matches a difficult
     # ground truth

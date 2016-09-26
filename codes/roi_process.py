@@ -135,15 +135,27 @@ def filter_roidb(dst):
             if int(roi[1]) > 719:
                 change = True
                 roi[1] = '719'
+            if int(roi[1]) < 1:
+                change = True
+                roi[1] = '1'
             if int(roi[2]) > 575:
                 change = True
                 roi[2] = '575'
+            if int(roi[2]) < 1:
+                change = True
+                roi[2] = '1'
             if int(roi[3]) > 719:
                 change = True
                 roi[3] = '719'
+            if int(roi[3]) < 1:
+                change = True
+                roi[3] = '1'
             if int(roi[4]) > 757: 
                 change = True
                 roi[4] = '575'
+            if int(roi[4]) < 1:
+                change = True
+                roi[4] = '1'
         if change:
             print 'refine -> ', roidb
             with open(roi_file, 'w') as f:
@@ -171,8 +183,9 @@ def generate_imageset(imageset_path):
 
 if __name__ == '__main__':
     #merge_roidb(roi_dbs)
-    extract_roidb(files, src, dst)
+    #extract_roidb(files, src, dst)
     #filter_roidb(dst)
-    extract_roidb(person_files, src, dst, ctr)
+    #extract_roidb(person_files, src, dst, ctr)
     filter_roidb(dst)
-    generate_imageset(imageset_path)
+    filter_roidb('/home/chenyang/sed/data/Annotations/pose_roi/')
+    #generate_imageset(imageset_path)
