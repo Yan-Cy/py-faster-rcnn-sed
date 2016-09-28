@@ -86,10 +86,10 @@ delta = 5
 def IoU(box1, box2):
     box1 = [float(x) for x in box1]
     box2 = [float(x) for x in box2]
-    if box1[0]-delta < box2[0] and box1[2]+delta > box2[2] and box1[1]-delta < box2[1] and box1[3]+delta > box2[3]:
-        return 1
-    if box2[0]-delta < box1[0] and box2[2]+delta > box1[2] and box2[1]-delta < box1[1] and box2[3]+delta > box1[3]:
-        return 1
+    #if box1[0]-delta < box2[0] and box1[2]+delta > box2[2] and box1[1]-delta < box2[1] and box1[3]+delta > box2[3]:
+    #    return 1
+    #if box2[0]-delta < box1[0] and box2[2]+delta > box1[2] and box2[1]-delta < box1[1] and box2[3]+delta > box1[3]:
+    #    return 1
     if box1[0] >= box2[2] or box1[2] <= box2[0] or box1[1] >= box2[3] or box1[3] <= box2[1]:
         return 0
     Intersect = min(box1[2], box2[2]) - max(box1[0], box2[0])
@@ -129,6 +129,15 @@ def filter_roidb(dst):
         if len(new_rois) != len(rois):
             change = True
             print 'Removed {} overlaped bounding box in {}'.format(str(len(rois) - len(new_rois)),roidb)
+            rois = new_rois
+
+        new_rois = []
+        for i in rois:
+            if i not in new_rois:
+                new_rois.append(i)
+        if len(new_rois) != len(rois):
+            change = True
+            print 'Removed {} duplicated bounding box in {}'.format(str(len(rois) - len(new_rois)),roidb)
             rois = new_rois
 
         for ind, roi in enumerate(rois):
@@ -187,5 +196,6 @@ if __name__ == '__main__':
     #filter_roidb(dst)
     #extract_roidb(person_files, src, dst, ctr)
     filter_roidb(dst)
+    filter_roidb('/home/chenyang/sed/data/Annotations/refine/')
     filter_roidb('/home/chenyang/sed/data/Annotations/pose_roi/')
     #generate_imageset(imageset_path)
