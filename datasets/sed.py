@@ -30,7 +30,7 @@ class sed(imdb):
                          'Embrace',
                          'Pointing',
                          'CellToEar',
-                         #'Pose'
+                         'Pose'
                          )
         self._class_to_ind = dict(zip(self.classes, xrange(self.num_classes)))
         self._image_ext = ['.jpg', '.png']

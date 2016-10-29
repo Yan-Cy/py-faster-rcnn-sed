@@ -192,12 +192,22 @@ class sed(datasets.imdb):
         gt_roidb = self.gt_roidb()
         person_roidb = self.person_roidb(gt_roidb)
         ss_roidb = self._load_selective_search_roidb(gt_roidb)
-        roidb = datasets.imdb.merge_roidbs(gt_roidb, person_roidb)
+        roidb = datasets.imdb.merge_roidbs(person_roidb, ss_roidb)
         #roidb = person_roidb
         print self._image_set
-        #if self._image_set != 'test':
-        #    roidb = datasets.imdb.merge_roidbs(roidb, gt_roidb)
-        roidb = datasets.imdb.merge_roidbs(roidb, ss_roidb)
+        if self._image_set != 'test':
+            roidb = datasets.imdb.merge_roidbs(roidb, gt_roidb)
+            hn_roidb = self.hn_roidb(gt_roidb)
+            roidb = datasets.imdb.merge_roidbs(roidb, hn_roidb)
+            print 'Loaded hard negative'
+        return roidb
+
+    def sed_traindata_test(self):
+        gt_roidb = self.gt_roidb()
+        person_roidb = self.person_roidb(gt_roidb)
+        ss_roidb = self._load_selective_search_roidb(gt_roidb)
+        roidb = datasets.imdb.merge_roidbs(person_roidb, ss_roidb)
+        #roidb = person_roidb
         return roidb
 
     def person_roidb(self, gt_roidb):
@@ -206,6 +216,13 @@ class sed(datasets.imdb):
             box_list.append(self._load_person_roidb(self.image_index[i]))
        
         return self.create_roidb_from_box_list(box_list, gt_roidb)
+
+    def hn_roidb(self, gt_roidb):
+        box_list = []
+        for i in xrange(self.num_images):
+            box_list.append(self._load_hn_roidb(self.image_index[i]))
+ 
+        return self.create_roidb_from_box_list(box_list, gt_roidb, True)
 
     def _load_person_roidb(self, index):
         filename = os.path.join(self._data_path, 'Annotations', 'pose_roi',  index + '.roi')
@@ -220,7 +237,7 @@ class sed(datasets.imdb):
                 print 'Can not find person file for', filename
                 return np.zeros((0,4), dtype=np.uint16)
         
-        with open(filename)as f:
+        with open(filename) as f:
             data = f.read()
         import re
         objs = re.findall('(\S+) (\d+) (\d+) (\d+) (\d+)', data)
@@ -254,7 +271,32 @@ class sed(datasets.imdb):
         #assert False
         return os.path.join(self._data_path, 'Annotations', 'pose_roi',  '_'.join(data) + '.roi')
 
-    box_height = 100
+    def _load_hn_roidb(self, index):
+        filename = os.path.join(self._data_path, 'Annotations', 'hn_roi',  index + '.roi')
+        if not os.path.exists(filename):
+            return np.zeros((0,4), dtype=np.uint16)
+        
+        with open(filename) as f:
+            data = f.read()
+        import re
+        objs = re.findall('(\d+) (\d+) (\d+) (\d+)', data)
+
+        num_objs = len(objs)
+        boxes = np.zeros((num_objs, 4), dtype=np.uint16)
+
+        for ix, obj in enumerate(objs):
+            # Make pixel indexes 0-based
+            x1 = float(obj[0])
+            y1 = float(obj[1])
+            x2 = float(obj[2])
+            y2 = float(obj[3])
+            #print x1, y1, x2, y2
+            boxes[ix, :] = self.sed_refine_box(x1, y1, x2, y2)
+         
+        return boxes
+
+
+    box_height = 10000
     def sed_refine_box(self, x1, y1, x2, y2):
         if y2 - y1 > self.box_height:
             y2 = y1 + self.box_height
@@ -298,7 +340,8 @@ class sed(datasets.imdb):
         return {'boxes' : boxes,
                 'gt_classes': gt_classes,
                 'gt_overlaps' : overlaps,
-                'flipped' : False}
+                'flipped' : False,
+                'hard_negs': np.array([False]*num_objs)}
 
     def _write_sed_results_file(self, all_boxes):
         use_salt = self.config['use_salt']
@@ -345,7 +388,7 @@ class sed(datasets.imdb):
     def evaluate_detections(self, all_boxes, output_dir):
         comp_id = self._write_sed_results_file(all_boxes)
         #self._do_matlab_eval(comp_id, output_dir)
-	self._do_python_eval(output_dir)
+	return self._do_python_eval(output_dir)
 
     def competition_mode(self, on):
         if on:
@@ -388,13 +431,15 @@ class sed(datasets.imdb):
         aps = []
         if not os.path.isdir(output_dir):
             os.mkdir(output_dir)
+        total_hn = 0
         for i, cls in enumerate(self._classes):
             if cls == '__background__':
                 continue
             filename = self._get_results_file_template().format(cls)
-            rec, prec, ap = sed_eval(
+            rec, prec, ap, cls_total_hn = sed_eval(
                 filename, annopath, imagesetfile, cls, cachedir, ovthresh=0.5)
             aps += [ap]
+            total_hn = total_hn + cls_total_hn
             print('AP for {} = {:.4f}'.format(cls, ap))
             with open(os.path.join(output_dir, cls + '_pr.pkl'), 'w') as f:
                 cPickle.dump({'rec': rec, 'prec': prec, 'ap': ap}, f)
@@ -413,7 +458,7 @@ class sed(datasets.imdb):
         print('-- Thanks, The Management')
         print('--------------------------------------------------------------')
 
-        return aps
+        return aps, total_hn, self._get_results_file_template()
 
 if __name__ == '__main__':
     d = datasets.sed('train', '')

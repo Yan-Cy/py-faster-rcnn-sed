@@ -1,5 +1,7 @@
 import os
 import re
+import shutil
+import random
 
 anno_path = '/home/chenyang/sed/data/Annotations/'
 #roi_dbs = ['raw_bbox', 'pose_roi']
@@ -86,10 +88,10 @@ delta = 5
 def IoU(box1, box2):
     box1 = [float(x) for x in box1]
     box2 = [float(x) for x in box2]
-    if box1[0]-delta < box2[0] and box1[2]+delta > box2[2] and box1[1]-delta < box2[1] and box1[3]+delta > box2[3]:
-        return 1
-    if box2[0]-delta < box1[0] and box2[2]+delta > box1[2] and box2[1]-delta < box1[1] and box2[3]+delta > box1[3]:
-        return 1
+    #if box1[0]-delta < box2[0] and box1[2]+delta > box2[2] and box1[1]-delta < box2[1] and box1[3]+delta > box2[3]:
+    #    return 1
+    #if box2[0]-delta < box1[0] and box2[2]+delta > box1[2] and box2[1]-delta < box1[1] and box2[3]+delta > box1[3]:
+    #    return 1
     if box1[0] >= box2[2] or box1[2] <= box2[0] or box1[1] >= box2[3] or box1[3] <= box2[1]:
         return 0
     Intersect = min(box1[2], box2[2]) - max(box1[0], box2[0])
@@ -129,6 +131,15 @@ def filter_roidb(dst):
         if len(new_rois) != len(rois):
             change = True
             print 'Removed {} overlaped bounding box in {}'.format(str(len(rois) - len(new_rois)),roidb)
+            rois = new_rois
+
+        new_rois = []
+        for i in rois:
+            if i not in new_rois:
+                new_rois.append(i)
+        if len(new_rois) != len(rois):
+            change = True
+            print 'Removed {} duplicated bounding box in {}'.format(str(len(rois) - len(new_rois)),roidb)
             rois = new_rois
 
         for ind, roi in enumerate(rois):
@@ -181,11 +192,77 @@ def generate_imageset(imageset_path):
     print 'Total training images:', train_count
     print 'Total testing images:', test_count
 
+
+CLASSES = ['Embrace', 'Pointing', 'CellToEar', 'Pose']
+
+def export_roidb():#imgsets, imgsrc, annosrc, dstpath, num_cls):
+    imgsets = ['train', 'test']
+    imgsrc = '/home/chenyang/sed/data/Images/'
+    annosrc = '/home/chenyang/sed/data/Annotations/roi/'
+    dstpath = '/home/chenyang/sed/annodata/'
+    num_cls = {'train': {'Embrace': 100, 'Pointing': 100, 'CellToEar': 100, 'Pose': 300},
+                'test': {'Embrace': 50, 'Pointing': 50, 'CellToEar': 50, 'Pose': 150}}
+    for imset in imgsets:
+        src = os.path.join('/home/chenyang/sed/data/ImageSets', imset + '.txt')
+        with open(src) as f:
+            imgset = [x.strip() for x in f.readlines()]
+       
+        #print dstpath, imset
+        annodst = os.path.join(dstpath, imset + '.txt')
+        if os.path.exists(annodst):
+            os.remove(annodst)
+       
+        annoset = dict()
+        for cls in CLASSES:
+            annoset[cls] = []
+
+        for img in imgset:
+            annofile = os.path.join(annosrc, img + '.roi')
+            if not os.path.exists(annofile):
+                print 'cannot find annotation source', annofile
+                continue
+            with open(annofile) as f:
+                annos = [x.strip().split(' ') for x in f.readlines() if x.strip()]
+            
+            for anno in annos:
+                #print img, anno
+                annoset[anno[0]].append([img] + anno)
+            #with open(annodst, 'a') as f:
+            #    for anno in annos:
+            #        f.write(img + ' ')
+            #        f.write(anno)
+            #        f.write('\n')
+
+        for cls in CLASSES:
+            print cls, len(annoset[cls])
+            cls_anno = random.sample(annoset[cls], num_cls[imset][cls])
+            
+            for anno in cls_anno:
+                with open(annodst, 'a') as f:
+                    f.write(' '.join(anno))
+                    f.write('\n')
+            
+                img = anno[0]        
+                dstfile = os.path.join(dstpath, 'images', img + '.jpg')
+                if os.path.exists(dstfile):
+                    continue
+            
+                imgfile = os.path.join(imgsrc, img + '.jpg')
+                if not os.path.exists(imgfile):
+                    print 'cannot find image source', imgfile
+                    continue
+
+                shutil.copy(imgfile, dstfile)
+
+
 if __name__ == '__main__':
     #merge_roidb(roi_dbs)
     #extract_roidb(files, src, dst)
     #filter_roidb(dst)
     #extract_roidb(person_files, src, dst, ctr)
-    filter_roidb(dst)
+    #filter_roidb(dst)
+    filter_roidb('/home/chenyang/sed/data/Annotations/roi/')
     filter_roidb('/home/chenyang/sed/data/Annotations/pose_roi/')
+    filter_roidb('/home/chenyang/sed/data/Annotations/refine')
     #generate_imageset(imageset_path)
+    #export_roidb()

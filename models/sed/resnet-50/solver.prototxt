@@ -1,0 +1,13 @@
+train_net: "models/sed/resnet-50/train.prototxt"
+base_lr: 0.001
+lr_policy: "multistep"
+gamma: 0.1
+stepsize: 40000
+display: 100
+max_iter: 200000
+momentum: 0.9
+weight_decay: 0.0001
+snapshot: 10000
+snapshot_prefix: "resnet50_train_5w"
+solver_mode: GPU
+#type: "Adam"
