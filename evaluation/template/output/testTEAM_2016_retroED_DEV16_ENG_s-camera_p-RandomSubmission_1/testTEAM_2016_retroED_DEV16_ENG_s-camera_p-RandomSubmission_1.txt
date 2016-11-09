@@ -1,0 +1,45 @@
+Experiment Identifier(s):
+testTEAM_2016_interactiveED_DEV16_ENG_s-camera_p-RandomSubmission_1
+
+System Description:
+testTEAM_2016_interactiveED_DEV16_ENG_s-camera_p-RandomSubmission_1 - Random system submission filled with random values for expected events and expected files
+
+<VALUE> values are to be adapted to your needs
+Directories should be created before running the tools 
+
+Content generated using:
+% TrecVid08/tools/TV08MergeHelper/ECFValidator.pl --fps 25 --CreateRandomSysCSV --limitto PersonRuns,CellToEar:0.40,ObjectPut:0.60,PeopleMeet:0.65,PeopleSplitUp:0.80,Embrace:0.50,Pointing:0.90 --writeToDir RandomCSVs <ECF>
+  (note the per event threshold selection; events can have a different 'true/false' threshold but that value needs to be consistent for a given event for a given EXPID)
+
+% TrecVid08/tools/misc/make_xml_from_csv.pl --limitto PersonRuns,CellToEar,ObjectPut,PeopleMeet,PeopleSplitUp,Embrace,Pointing --gtf --ChangeType --fps 25 RandomCSVs <XMLdir> RandomSysfiles
+  (respecifying the event list again because otherwise header will contain all authorized events, and given that the source file is a GTF and we want a SYS, make sure to tell the tool this information)
+
+Content then put together within a tar.bz2 archive following rules set in eval plan for <EXPID> naming and submission checking was run on it using:
+% TrecVid08/tools/TVED-SubmissionChecker/TV16SED-SubmissionChecker.sh --Verbose --ecf <ECF> --fps 25 --uncompress_dir SubCheck/Unc --WriteMemDump SubCheck/Val --create_Events_Processed_file --quit_if_non_scorable <SUBID>.tar.bz2
+  (the '--create_Events_Processed_file' is necessary to confirm the events contained match the submission limitations (EVAL16 vs SUB16))
+
+In order to empty the system files provided in order to reuse them later:
+% TrecVid08/tools/TV08ViperValidator/TV08ViperValidator.pl --limitto PersonRuns,CellToEar,ObjectPut,PeopleMeet,PeopleSplitUp,Embrace,Pointing --Remove ALL --write <EmptySysDir> SubCheck/Unc/output/*/*.xml
+
+Create one CSV file per XML file to fill, following the structure:
+"ID","EventType","Framespan","DetectionScore","DetectionDecision"
+"1","PersonRuns","1043:2435","0.890","true"
+"2","PersonRuns","2284:7091","0.050","false"
+  (...)
+  (the header is required)
+
+Once the CSV files are ready, adapt the following line to your needs (one command line needed per CSV file to XML file):
+% TrecVid08/tools/TV08ViperValidator/TV08ViperValidator.pl --limitto PersonRuns,CellToEar,ObjectPut,PeopleMeet,PeopleSplitUp,Embrace,Pointing --fps 25 --write <FinalSysDir> --insertCSV <InputCSVDir>/file_n.csv <EmptySysDir>/file_n.xml
+
+
+
+In your system submission, it is imperative to not forget the "Events_Processed:" line as it controls the events that will be checked from within your submission (given they match the expected events)
+
+Events_Processed: PersonRuns CellToEar ObjectPut PeopleMeet PeopleSplitUp Embrace Pointing
+  (make sure to update your Events_Processed section to contain ONLY the expected events)
+
+Training:
+None, random number generator seed unspecified
+
+References:
+[1] http://www.nist.gov/itl/iad/mig/sed.cfm

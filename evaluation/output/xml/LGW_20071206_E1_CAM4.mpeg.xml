@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viper xmlns="http://lamp.cfar.umd.edu/viper#" xmlns:data="http://lamp.cfar.umd.edu/viperdata#">
+  <config>
+    <descriptor name="Information" type="FILE">
+      <attribute dynamic="false" name="SOURCETYPE" type="http://lamp.cfar.umd.edu/viperdata#lvalue">
+        <data:lvalue-possibles>
+          <data:lvalue-enum value="SEQUENCE"/>
+          <data:lvalue-enum value="FRAMES"/>
+        </data:lvalue-possibles>
+      </attribute>
+      <attribute dynamic="false" name="NUMFRAMES" type="http://lamp.cfar.umd.edu/viperdata#dvalue"/>
+      <attribute dynamic="false" name="FRAMERATE" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+      <attribute dynamic="false" name="H-FRAME-SIZE" type="http://lamp.cfar.umd.edu/viperdata#dvalue"/>
+      <attribute dynamic="false" name="V-FRAME-SIZE" type="http://lamp.cfar.umd.edu/viperdata#dvalue"/>
+    </descriptor>
+    <descriptor name="CellToEar:Unmapped_Sys" type="OBJECT">
+      <attribute dynamic="true" name="BoundingBox" type="http://lamp.cfar.umd.edu/viperdata#bbox"/>
+      <attribute dynamic="false" name="DetectionDecision" type="http://lamp.cfar.umd.edu/viperdata#bvalue"/>
+      <attribute dynamic="false" name="DetectionScore" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+      <attribute dynamic="true" name="Point" type="http://lamp.cfar.umd.edu/viperdata#point"/>
+    </descriptor>
+    <descriptor name="Embrace:Unmapped_Sys" type="OBJECT">
+      <attribute dynamic="true" name="BoundingBox" type="http://lamp.cfar.umd.edu/viperdata#bbox"/>
+      <attribute dynamic="false" name="DetectionDecision" type="http://lamp.cfar.umd.edu/viperdata#bvalue"/>
+      <attribute dynamic="false" name="DetectionScore" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+      <attribute dynamic="true" name="Point" type="http://lamp.cfar.umd.edu/viperdata#point"/>
+    </descriptor>
+    <descriptor name="Pointing:Mapped" type="OBJECT">
+      <attribute dynamic="true" name="BoundingBox" type="http://lamp.cfar.umd.edu/viperdata#bbox"/>
+      <attribute dynamic="false" name="DetectionDecision" type="http://lamp.cfar.umd.edu/viperdata#bvalue"/>
+      <attribute dynamic="false" name="DetectionScore" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+      <attribute dynamic="true" name="Point" type="http://lamp.cfar.umd.edu/viperdata#point"/>
+    </descriptor>
+    <descriptor name="Pointing:Unmapped_Sys" type="OBJECT">
+      <attribute dynamic="true" name="BoundingBox" type="http://lamp.cfar.umd.edu/viperdata#bbox"/>
+      <attribute dynamic="false" name="DetectionDecision" type="http://lamp.cfar.umd.edu/viperdata#bvalue"/>
+      <attribute dynamic="false" name="DetectionScore" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+      <attribute dynamic="true" name="Point" type="http://lamp.cfar.umd.edu/viperdata#point"/>
+    </descriptor>
+  </config>
+  <data>
+    <sourcefile filename="LGW_20071206_E1_CAM4.mpeg">
+      <file id="0" name="Information">
+        <attribute name="FRAMERATE">
+          <data:fvalue value="1.0"/>
+        </attribute>
+        <attribute name="H-FRAME-SIZE">
+          <data:dvalue value="720"/>
+        </attribute>
+        <attribute name="NUMFRAMES">
+          <data:dvalue value="188832"/>
+        </attribute>
+        <attribute name="SOURCETYPE"/>
+        <attribute name="V-FRAME-SIZE">
+          <data:dvalue value="576"/>
+        </attribute>
+      </file>
+      <object name="CellToEar:Unmapped_Sys" id="0" framespan="68135:68135">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: CellToEar | ID: 7 | FS: 68135:68135 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.164000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.164000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Sys" id="1" framespan="86115:86175">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: CellToEar | ID: 9 | FS: 86115:86175 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.174200 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.174200"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Sys" id="2" framespan="37205:37295">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: CellToEar | ID: 5 | FS: 37205:37295 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.373778 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.373778"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Sys" id="3" framespan="37145:37175">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: CellToEar | ID: 4 | FS: 37145:37175 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.244500 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.244500"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Sys" id="4" framespan="30655:30675">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: CellToEar | ID: 0 | FS: 30655:30675 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.131000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.131000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Sys" id="5" framespan="35445:35455">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: CellToEar | ID: 2 | FS: 35445:35455 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.165500 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.165500"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Sys" id="6" framespan="78965:78965">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: CellToEar | ID: 8 | FS: 78965:78965 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.182000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.182000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Sys" id="7" framespan="40925:40935">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: CellToEar | ID: 6 | FS: 40925:40935 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.350000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.350000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Sys" id="8" framespan="36995:37115">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: CellToEar | ID: 3 | FS: 36995:37115 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.202917 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.202917"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Sys" id="9" framespan="35135:35145">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: CellToEar | ID: 1 | FS: 35135:35145 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.259000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.259000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Sys" id="0" framespan="68305:68305">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Embrace | ID: 4 | FS: 68305:68305 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.240000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.240000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Sys" id="1" framespan="18165:18165">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Embrace | ID: 3 | FS: 18165:18165 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.157000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.157000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Sys" id="2" framespan="11205:11205">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Embrace | ID: 1 | FS: 11205:11205 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.381000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.381000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Sys" id="3" framespan="11065:11065">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Embrace | ID: 0 | FS: 11065:11065 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.148000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.148000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Sys" id="4" framespan="11235:11245">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Embrace | ID: 2 | FS: 11235:11245 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.124000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.124000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Sys" id="5" framespan="86115:86115">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Embrace | ID: 5 | FS: 86115:86115 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.542000 (true) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="true"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.542000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Mapped" id="0" framespan="37335:37445">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 14 | FS: 37335:37445 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.447700 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml)
+Mapped to REF "FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 3 | FS: 37334:37355 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071206_E1_CAM4.xml" -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.447700"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Mapped" id="1" framespan="37015:37295">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 13 | FS: 37015:37295 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.368143 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml)
+Mapped to REF "FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 1 | FS: 37119:37131 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071206_E1_CAM4.xml" -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.368143"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Mapped" id="2" framespan="11065:11245">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 1 | FS: 11065:11245 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.404353 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml)
+Mapped to REF "FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 0 | FS: 11084:11113 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071206_E1_CAM4.xml" -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.404353"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Mapped" id="3" framespan="36945:36945">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 12 | FS: 36945:36945 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.291000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml)
+Mapped to REF "FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 2 | FS: 37136:37157 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071206_E1_CAM4.xml" -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.291000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="4" framespan="86115:86175">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 37 | FS: 86115:86175 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.270143 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.270143"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="5" framespan="79785:79845">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 32 | FS: 79785:79845 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.505429 (true) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="true"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.505429"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="6" framespan="26335:26365">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 3 | FS: 26335:26365 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.472000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.472000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="7" framespan="36755:36795">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 9 | FS: 36755:36795 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.304200 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.304200"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="8" framespan="68955:68955">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 22 | FS: 68955:68955 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.111000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.111000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="9" framespan="69285:69285">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 25 | FS: 69285:69285 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.987000 (true) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="true"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.987000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="10" framespan="40855:40855">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 16 | FS: 40855:40855 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.289000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.289000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="11" framespan="69235:69245">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 24 | FS: 69235:69245 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.570000 (true) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="true"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.570000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="12" framespan="30585:30695">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 5 | FS: 30585:30695 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.257700 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.257700"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="13" framespan="35055:35335">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 6 | FS: 35055:35335 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.391444 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.391444"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="14" framespan="76395:76395">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 26 | FS: 76395:76395 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.139000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.139000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="15" framespan="40925:40925">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 17 | FS: 40925:40925 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.508000 (true) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="true"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.508000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="16" framespan="35425:35525">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 8 | FS: 35425:35525 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.270818 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.270818"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="17" framespan="88495:88505">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 39 | FS: 88495:88505 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.145000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.145000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="18" framespan="88685:88685">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 42 | FS: 88685:88685 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.555000 (true) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="true"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.555000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="19" framespan="37755:37755">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 15 | FS: 37755:37755 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.116000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.116000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="20" framespan="85845:85865">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 35 | FS: 85845:85865 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.291000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.291000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="21" framespan="93565:93565">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 45 | FS: 93565:93565 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.212000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.212000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="22" framespan="79445:79485">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 27 | FS: 79445:79485 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.590600 (true) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="true"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.590600"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="23" framespan="79565:79565">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 28 | FS: 79565:79565 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.108000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.108000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="24" framespan="40955:40975">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 18 | FS: 40955:40975 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.346000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.346000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="25" framespan="79615:79625">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 29 | FS: 79615:79625 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.288500 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.288500"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="26" framespan="14045:14455">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 2 | FS: 14045:14455 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.790167 (true) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="true"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.790167"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="27" framespan="79755:79755">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 31 | FS: 79755:79755 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.139000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.139000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="28" framespan="88395:88395">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 38 | FS: 88395:88395 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.138000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.138000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="29" framespan="30535:30545">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 4 | FS: 30535:30545 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.255000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.255000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="30" framespan="69105:69105">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 23 | FS: 69105:69105 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.122000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.122000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="31" framespan="85915:85935">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 36 | FS: 85915:85935 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.152000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.152000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="32" framespan="68745:68775">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 20 | FS: 68745:68775 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.662250 (true) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="true"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.662250"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="33" framespan="88555:88575">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 40 | FS: 88555:88575 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.203000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.203000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="34" framespan="93285:93285">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 44 | FS: 93285:93285 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.109000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.109000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="35" framespan="35385:35395">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 7 | FS: 35385:35395 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.212500 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.212500"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="36" framespan="36885:36915">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 11 | FS: 36885:36915 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.196000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.196000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="37" framespan="80125:80245">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 34 | FS: 80125:80245 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.479333 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.479333"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="38" framespan="88625:88635">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 41 | FS: 88625:88635 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.366000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.366000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="39" framespan="79965:80095">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 33 | FS: 79965:80095 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.470462 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.470462"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="40" framespan="90505:90555">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 43 | FS: 90505:90555 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.417167 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.417167"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="41" framespan="79655:79665">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 30 | FS: 79655:79665 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.130000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.130000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="42" framespan="109725:109725">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 46 | FS: 109725:109725 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.134000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.134000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="43" framespan="68115:68135">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 19 | FS: 68115:68135 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.132333 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.132333"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="44" framespan="1745:1765">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 0 | FS: 1745:1765 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.330000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.330000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="45" framespan="68815:68815">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 21 | FS: 68815:68815 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.423000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.423000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Sys" id="46" framespan="36845:36855">
+        <!-- Clone #0001 of UID (FILE: LGW_20071206_E1_CAM4.mpeg | EVENT: Pointing | ID: 10 | FS: 36845:36855 | FILE FS: 1:188832 | GTF : 0 | Dec: 0.181000 (false) | XML FILE: xml/LGW_20071206_E1_CAM4.xml) -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0.181000"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+    </sourcefile>
+  </data>
+</viper>

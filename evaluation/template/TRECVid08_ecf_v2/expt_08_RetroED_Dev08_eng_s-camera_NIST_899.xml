@@ -1,0 +1,97 @@
+<ecf> 
+    <source_signal_duration>72000.0</source_signal_duration> 
+    <version>20080609_1430</version>
+    <excerpt_list>
+
+        <excerpt> 
+            <filename>LGW_20071101_E1_CAM1.mpeg</filename>
+            <begin>0.0</begin> 
+            <duration>7200.0</duration>
+            <language>english</language> 
+            <source_type>surveillance</source_type>
+            <sample_rate>25.0</sample_rate>
+        </excerpt>
+        
+        <excerpt> 
+            <filename>LGW_20071101_E1_CAM2.mpeg</filename>
+            <begin>0.0</begin> 
+            <duration>7200.0</duration>
+            <language>english</language> 
+            <source_type>surveillance</source_type>
+            <sample_rate>25.0</sample_rate>
+        </excerpt>
+        
+        <excerpt> 
+            <filename>LGW_20071101_E1_CAM3.mpeg</filename>
+            <begin>0.0</begin> 
+            <duration>7200.0</duration>
+            <language>english</language> 
+            <source_type>surveillance</source_type>
+            <sample_rate>25.0</sample_rate>
+        </excerpt>
+        
+        <excerpt> 
+            <filename>LGW_20071101_E1_CAM4.mpeg</filename>
+            <begin>0.0</begin> 
+            <duration>7200.0</duration>
+            <language>english</language> 
+            <source_type>surveillance</source_type>
+            <sample_rate>25.0</sample_rate>
+        </excerpt>
+        
+        <excerpt> 
+            <filename>LGW_20071101_E1_CAM5.mpeg</filename>
+            <begin>0.0</begin> 
+            <duration>7200.0</duration>
+            <language>english</language> 
+            <source_type>surveillance</source_type>
+            <sample_rate>25.0</sample_rate>
+        </excerpt>    
+
+        <excerpt> 
+            <filename>LGW_20071106_E1_CAM1.mpeg</filename>
+            <begin>0.0</begin> 
+            <duration>7200.0</duration>
+            <language>english</language> 
+            <source_type>surveillance</source_type>
+            <sample_rate>25.0</sample_rate>
+        </excerpt>
+        
+        <excerpt> 
+            <filename>LGW_20071106_E1_CAM2.mpeg</filename>
+            <begin>0.0</begin> 
+            <duration>7200.0</duration>
+            <language>english</language> 
+            <source_type>surveillance</source_type>
+            <sample_rate>25.0</sample_rate>
+        </excerpt>
+        
+        <excerpt> 
+            <filename>LGW_20071106_E1_CAM3.mpeg</filename>
+            <begin>0.0</begin> 
+            <duration>7200.0</duration>
+            <language>english</language> 
+            <source_type>surveillance</source_type>
+            <sample_rate>25.0</sample_rate>
+        </excerpt>
+        
+        <excerpt> 
+            <filename>LGW_20071106_E1_CAM4.mpeg</filename>
+            <begin>0.0</begin> 
+            <duration>7200.0</duration>
+            <language>english</language> 
+            <source_type>surveillance</source_type>
+            <sample_rate>25.0</sample_rate>
+        </excerpt>
+        
+        <excerpt> 
+            <filename>LGW_20071106_E1_CAM5.mpeg</filename>
+            <begin>0.0</begin> 
+            <duration>7200.0</duration>
+            <language>english</language> 
+            <source_type>surveillance</source_type>
+            <sample_rate>25.0</sample_rate>
+        </excerpt>            
+        
+    </excerpt_list>
+</ecf>
