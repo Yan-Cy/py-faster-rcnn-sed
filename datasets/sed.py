@@ -166,11 +166,13 @@ class sed(imdb):
                 'seg_areas' : seg_areas}
 
     def _write_results_file(self, all_boxes):
+        filenames = []
         for cls_ind, cls in enumerate(self.classes):
             if cls == '__background__':
                 continue
             print 'Writing {} results file'.format(cls)
             filename = self._get_results_file_template().format(cls)
+            filenames.append(filename)
             print filename
             with open(filename, 'wt') as f:
                 for im_ind, index in enumerate(self.image_index):
@@ -185,16 +187,19 @@ class sed(imdb):
                                        dets[k, 0] + 1, dets[k, 1] + 1,
                                        dets[k, 2] + 1, dets[k, 3] + 1))
 
+        return filenames
+
     def evaluate_detections(self, all_boxes, output_dir):
-        self._write_results_file(all_boxes)
-        #aps = self._do_python_eval(output_dir)
-        #if self.config['cleanup']:
-        #    for cls in self._classes:
-        #        if cls == '__background__':
-        #            continue
-        #        filename = self._get_results_file_template().format(cls)
-        #        #os.remove(filename)
-        return aps
+        filenames = self._write_results_file(all_boxes) 
+        aps = self._do_python_eval(output_dir)
+        if self.config['cleanup']:
+            for cls in self._classes:
+                if cls == '__background__':
+                    continue
+                filename = self._get_results_file_template().format(cls)
+                os.remove(filename)
+        print aps
+        return filenames
 
     def _get_comp_id(self):
         comp_id = (self._comp_id + '_' + self._salt if self.config['use_salt']

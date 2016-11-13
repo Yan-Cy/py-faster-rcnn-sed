@@ -222,7 +222,7 @@ if __name__ == '__main__':
    
     imgs = [os.path.join(imdb._data_path, 'Images', x + '.jpg') for x in imdb._image_index]
 
-    log_file = '/home/chenyang/lib/log/result_3cls_std.txt'
+    log_file = '/home/chenyang/lib/log/result_5cls_1113_HNM.txt'
     iters = 1
     hard_negs = []
     threshold = 1

@@ -3,13 +3,20 @@ import shutil
 import re
 import collections
 
-cams = ['LGW_20071206_E1_CAM1', 'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', 'LGW_20071206_E1_CAM4', 'LGW_20071206_E1_CAM5', 
-        'LGW_20071207_E1_CAM1', 'LGW_20071207_E1_CAM2', 'LGW_20071207_E1_CAM3', 'LGW_20071207_E1_CAM4', 'LGW_20071207_E1_CAM5']
-raw_data = '/mnt/sdc/chenyang/raw_data/raw_per_5/'
+cams = ['LGW_20071123_E1_CAM1', 'LGW_20071123_E1_CAM2', 'LGW_20071123_E1_CAM3',
+        'LGW_20071123_E1_CAM4', 'LGW_20071123_E1_CAM5', 'LGW_20071130_E1_CAM1',
+        'LGW_20071130_E1_CAM2', 'LGW_20071130_E1_CAM3', 'LGW_20071130_E1_CAM4',
+        'LGW_20071130_E1_CAM5', 'LGW_20071130_E2_CAM1', 'LGW_20071130_E2_CAM2',
+        'LGW_20071130_E2_CAM3', 'LGW_20071130_E2_CAM4', 'LGW_20071130_E2_CAM5',
+        'LGW_20071206_E1_CAM1', 'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', 
+        'LGW_20071206_E1_CAM4', 'LGW_20071206_E1_CAM5', 'LGW_20071207_E1_CAM2',
+        'LGW_20071207_E1_CAM3', 'LGW_20071207_E1_CAM4', 'LGW_20071207_E1_CAM5']
+
+raw_data = '/mnt/sdc/chenyang/sed/Eve08/'
 img_db = '/mnt/sdc/chenyang/sed/data/Images/'
 
 def prepare_db():
-    ftest = open('1206test.txt', 'w')
+    ftest = open('1113test.txt', 'w')
     for cam in cams:
         data_path = os.path.join(raw_data, cam)
         imgs = os.listdir(data_path)
@@ -17,14 +24,14 @@ def prepare_db():
             imgname = cam + '_' + os.path.splitext(img)[0]
             src = os.path.join(data_path, img)
             dst = os.path.join(img_db, imgname + '.jpg')
-            if imgname[-1] != '5':
+            if imgname[-1] != '5':  # choose img each 10 frame
                 continue
             print imgname, src, dst
-            #shutil.copy(src, dst)
+            shutil.copy(src, dst)
             ftest.write(imgname + '\n')
 
 CLASSES = ['Embrace', 'Pointing', 'CellToEar']
-dettemplate = '/home/chenyang/sed/results/comp4_2452f163-eff5-4863-9b0a-b78b6ccbe302_det_test_{}.txt'
+dettemplate = '/home/chenyang/py-faster-rcnn/data/sed/results/comp4_e5d92471-fffb-439a-94dc-d3315bdcc195_det_test_{}.txt'
 threshold = 0.5
 
 def prepare_csv():
@@ -124,9 +131,14 @@ def xml_script():
 
 
 def prepare_gtf():
-    gtf_path = '/home/chenyang/workspace/raw_data/gtf/'
+    gtf_path = '/home/chenyang/sed/Eve08/gtf/'
     gtxml_path = 'gtf_csv/'
-    gtfs = ['LGW_20071206_E1_CAM1', 'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', 
+    gtfs = ['LGW_20071123_E1_CAM1', 'LGW_20071123_E1_CAM2', 'LGW_20071123_E1_CAM3',
+            'LGW_20071123_E1_CAM4', 'LGW_20071123_E1_CAM5', 'LGW_20071130_E1_CAM1',
+            'LGW_20071130_E1_CAM2', 'LGW_20071130_E1_CAM3', 'LGW_20071130_E1_CAM4',
+            'LGW_20071130_E1_CAM5', 'LGW_20071130_E2_CAM1', 'LGW_20071130_E2_CAM2',
+            'LGW_20071130_E2_CAM3', 'LGW_20071130_E2_CAM4', 'LGW_20071130_E2_CAM5',
+            'LGW_20071206_E1_CAM1', 'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', 
             'LGW_20071206_E1_CAM4', 'LGW_20071206_E1_CAM5', 'LGW_20071207_E1_CAM2',
             'LGW_20071207_E1_CAM3', 'LGW_20071207_E1_CAM4', 'LGW_20071207_E1_CAM5']
 
