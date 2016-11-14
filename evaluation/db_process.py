@@ -30,8 +30,34 @@ def prepare_db():
             shutil.copy(src, dst)
             ftest.write(imgname + '\n')
 
+def run_exp(dectfiles, dirname):
+    os.chdir('/home/chenyang/lib/evaluation')
+
+    ecf_head = '<ecf xmlns="http://www.itl.nist.gov/iad/mig/tv08ecf#">\n\t<source_signal_duration>64800.0</source_signal_duration>\n\t<version>20090709</version>\n\t<excerpt_list>\n'
+    ecf_tail = '\t</excerpt_list>\n</ecf>\n'
+    ecf_temp = '\t\t<excerpt>\n\t\t\t<filename>{}</filename>\n\t\t\t<begin>0.0</begin>\n\t\t\t<duration>7200.0</duration>\n\t\t\t<language>english</language>\n\t\t\t<source_type>surveillance</source_type>\n\t\t\t<sample_rate>25.0</sample_rate>\n\t\t</excerpt>\n'
+    ecf_content = ''
+    for dectfile in dectfiles:
+        ecf_content = ecf_content + ecf_temp.format(dectfile + '.mpeg')
+    ecf_content = ecf_head + ecf_content + ecf_tail
+    with open('template/TRECVid08_ecf_v2/ecf.xml', 'w') as f:
+        f.write(ecf_content)
+
+    outdir = 'output/' + dirname + '/'
+    print outdir
+    if os.path.isdir(outdir):
+        os.system('rm -r ' + outdir)
+    os.mkdir(outdir)
+    os.mkdir(outdir + 'xml')
+    shutil.copy('eval.sh', outdir)
+    os.chdir(outdir)
+    os.system('pwd')
+    os.system('ls')
+    os.system('chmod +x eval.sh')
+    os.system('./eval.sh')
+
 CLASSES = ['Embrace', 'Pointing', 'CellToEar']
-dettemplate = '/home/chenyang/py-faster-rcnn/data/sed/results/comp4_e5d92471-fffb-439a-94dc-d3315bdcc195_det_test_{}.txt'
+dettemplate = '/home/chenyang/py-faster-rcnn/data/sed/results/{}_1113_vgg.txt'
 threshold = 0.5
 
 def prepare_csv():
@@ -77,6 +103,9 @@ def prepare_csv():
             for imgdet in imgdets:
                 assert imgdet[0] >= right
                 
+                if imgdet[0] > 188832:
+                    break
+
                 if imgdet[0] == right:
                     continue
                 if imgdet[0] - right < 30:
@@ -134,13 +163,17 @@ def prepare_gtf():
     gtf_path = '/home/chenyang/sed/Eve08/gtf/'
     gtxml_path = 'gtf_csv/'
     gtfs = ['LGW_20071123_E1_CAM1', 'LGW_20071123_E1_CAM2', 'LGW_20071123_E1_CAM3',
-            'LGW_20071123_E1_CAM4', 'LGW_20071123_E1_CAM5', 'LGW_20071130_E1_CAM1',
-            'LGW_20071130_E1_CAM2', 'LGW_20071130_E1_CAM3', 'LGW_20071130_E1_CAM4',
+            #'LGW_20071123_E1_CAM4', 
+            'LGW_20071123_E1_CAM5', 'LGW_20071130_E1_CAM1',
+            'LGW_20071130_E1_CAM2', 'LGW_20071130_E1_CAM3', #'LGW_20071130_E1_CAM4',
             'LGW_20071130_E1_CAM5', 'LGW_20071130_E2_CAM1', 'LGW_20071130_E2_CAM2',
-            'LGW_20071130_E2_CAM3', 'LGW_20071130_E2_CAM4', 'LGW_20071130_E2_CAM5',
+            'LGW_20071130_E2_CAM3', #'LGW_20071130_E2_CAM4', 
+            'LGW_20071130_E2_CAM5',
             'LGW_20071206_E1_CAM1', 'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', 
-            'LGW_20071206_E1_CAM4', 'LGW_20071206_E1_CAM5', 'LGW_20071207_E1_CAM2',
-            'LGW_20071207_E1_CAM3', 'LGW_20071207_E1_CAM4', 'LGW_20071207_E1_CAM5']
+            #'LGW_20071206_E1_CAM4', 
+            'LGW_20071206_E1_CAM5', 'LGW_20071207_E1_CAM2',
+            'LGW_20071207_E1_CAM3', #'LGW_20071207_E1_CAM4', 
+            'LGW_20071207_E1_CAM5']
 
     for gtf in gtfs:
         gtf_file = os.path.join(gtf_path, gtf + '.txt')
@@ -188,7 +221,11 @@ def gtf_script():
 
 if __name__ == '__main__':
     #prepare_db()
-    prepare_csv()
-    xml_script()
+    #prepare_csv()
+    #xml_script()
     #prepare_gtf()
     #gtf_script()
+
+    dectfiles = ['LGW_20071123_E1_CAM1', 'LGW_20071123_E1_CAM2']
+    dirname = 'test'
+    run_exp(dectfiles, dirname)

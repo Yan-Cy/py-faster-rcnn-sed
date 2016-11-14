@@ -33,7 +33,7 @@
     </descriptor>
   </config>
   <data>
-    <sourcefile filename="LGW_20071130_E2_CAM1.mpeg">
+    <sourcefile filename="LGW_20071130_E2_CAM5.mpeg">
       <file id="0" name="Information">
         <attribute name="FRAMERATE">
           <data:fvalue value="1.0"/>
