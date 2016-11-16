@@ -3,14 +3,11 @@ import shutil
 import re
 import collections
 
-cams = ['LGW_20071123_E1_CAM1', 'LGW_20071123_E1_CAM2', 'LGW_20071123_E1_CAM3',
-        'LGW_20071123_E1_CAM4', 'LGW_20071123_E1_CAM5', 'LGW_20071130_E1_CAM1',
-        'LGW_20071130_E1_CAM2', 'LGW_20071130_E1_CAM3', 'LGW_20071130_E1_CAM4',
-        'LGW_20071130_E1_CAM5', 'LGW_20071130_E2_CAM1', 'LGW_20071130_E2_CAM2',
-        'LGW_20071130_E2_CAM3', 'LGW_20071130_E2_CAM4', 'LGW_20071130_E2_CAM5',
-        'LGW_20071206_E1_CAM1', 'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', 
-        'LGW_20071206_E1_CAM4', 'LGW_20071206_E1_CAM5', 'LGW_20071207_E1_CAM2',
-        'LGW_20071207_E1_CAM3', 'LGW_20071207_E1_CAM4', 'LGW_20071207_E1_CAM5']
+cams = ['LGW_20071123_E1_CAM1', 'LGW_20071123_E1_CAM2', 'LGW_20071123_E1_CAM3', 'LGW_20071123_E1_CAM4', 'LGW_20071123_E1_CAM5', 
+        'LGW_20071130_E1_CAM1', 'LGW_20071130_E1_CAM2', 'LGW_20071130_E1_CAM3', 'LGW_20071130_E1_CAM4', 'LGW_20071130_E1_CAM5', 
+        'LGW_20071130_E2_CAM1', 'LGW_20071130_E2_CAM2', 'LGW_20071130_E2_CAM3', 'LGW_20071130_E2_CAM4', 'LGW_20071130_E2_CAM5',
+        'LGW_20071206_E1_CAM1', 'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', 'LGW_20071206_E1_CAM4','LGW_20071206_E1_CAM5', 
+        'LGW_20071207_E1_CAM2', 'LGW_20071207_E1_CAM3', 'LGW_20071207_E1_CAM4', 'LGW_20071207_E1_CAM5']
 
 raw_data = '/mnt/sdc/chenyang/sed/Eve08/'
 img_db = '/mnt/sdc/chenyang/sed/data/Images/'
@@ -18,6 +15,7 @@ img_db = '/mnt/sdc/chenyang/sed/data/Images/'
 def prepare_db():
     ftest = open('1113test.txt', 'w')
     for cam in cams:
+        count = 0
         data_path = os.path.join(raw_data, cam)
         imgs = os.listdir(data_path)
         for img in imgs:
@@ -26,9 +24,11 @@ def prepare_db():
             dst = os.path.join(img_db, imgname + '.jpg')
             if imgname[-1] != '5':  # choose img each 10 frame
                 continue
-            print imgname, src, dst
+            #print imgname, src, dst
+            count = count + 1
             shutil.copy(src, dst)
-            ftest.write(imgname + '\n')
+            #ftest.write(imgname + '\n')
+        print 'Images for {}: {}'.format(cam, str(count))
 
 def run_exp(dectfiles, dirname):
     os.chdir('/home/chenyang/lib/evaluation')
@@ -57,7 +57,7 @@ def run_exp(dectfiles, dirname):
     os.system('./eval.sh')
 
 CLASSES = ['Embrace', 'Pointing', 'CellToEar']
-dettemplate = '/home/chenyang/py-faster-rcnn/data/sed/results/{}_1113_vgg.txt'
+dettemplate = '/home/chenyang/sed/results/comp4_0b999a0c-87e3-4ec8-8d89-ffe5df1805bd_det_test_{}.txt'
 threshold = 0.5
 
 def prepare_csv():
@@ -113,16 +113,20 @@ def prepare_csv():
                     total = total + imgdet[1]
                     count = count + 1
                 else:
-                    segment = '%d:%d'%(left, right)
-                    id = id + 1
-                    score = total * 1.0 / count
-                    detcsv[imgname].append([id, cls, segment, score, score > threshold])
+                    if right - left > 20:
+                        segment = '%d:%d'%(left, right)
+                        id = id + 1
+                        score = total * 1.0 / count
+                        detcsv[imgname].append([id, cls, segment, score, score > threshold])
                     
                     left = imgdet[0]
                     right = left
                     total = imgdet[1]
                     count = 1
-
+    
+    os.system('rm -r csv && mkdir csv')
+    os.system('rm -r xml && mkdir xml')
+    
     for imgname in detcsv:
         csvfile = 'csv/' + imgname + '.csv'
         with open(csvfile, 'w') as f:
@@ -158,24 +162,20 @@ def xml_script():
 
             f.write(' '.join(cmd) + '\n')
 
+    os.system('chmod +x gen.sh')
+    os.system('./gen.sh')
+
 
 def prepare_gtf():
+    os.system('rm -r gtf_csv && mkdir gtf_csv')
+    os.system('rm -r gtf_xml && mkdir gtf_xml')
+
     gtf_path = '/home/chenyang/sed/Eve08/gtf/'
     gtxml_path = 'gtf_csv/'
-    gtfs = ['LGW_20071123_E1_CAM1', 'LGW_20071123_E1_CAM2', 'LGW_20071123_E1_CAM3',
-            #'LGW_20071123_E1_CAM4', 
-            'LGW_20071123_E1_CAM5', 'LGW_20071130_E1_CAM1',
-            'LGW_20071130_E1_CAM2', 'LGW_20071130_E1_CAM3', #'LGW_20071130_E1_CAM4',
-            'LGW_20071130_E1_CAM5', 'LGW_20071130_E2_CAM1', 'LGW_20071130_E2_CAM2',
-            'LGW_20071130_E2_CAM3', #'LGW_20071130_E2_CAM4', 
-            'LGW_20071130_E2_CAM5',
-            'LGW_20071206_E1_CAM1', 'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', 
-            #'LGW_20071206_E1_CAM4', 
-            'LGW_20071206_E1_CAM5', 'LGW_20071207_E1_CAM2',
-            'LGW_20071207_E1_CAM3', #'LGW_20071207_E1_CAM4', 
-            'LGW_20071207_E1_CAM5']
+    gtfs = cams 
 
     for gtf in gtfs:
+        print gtf
         gtf_file = os.path.join(gtf_path, gtf + '.txt')
         with open(gtf_file) as f:
             gts = [x.strip().split(' ') for x in f.readlines()]
@@ -218,14 +218,61 @@ def gtf_script():
 
             f.write(' '.join(cmd) + '\n')
 
+    os.system('chmod +x gtf_gen.sh')
+    os.system('./gtf_gen.sh')
+
+def exp_control():
+    queue = [['LGW_20071123_E1_CAM1'], 
+             ['LGW_20071123_E1_CAM2'],
+             ['LGW_20071123_E1_CAM5'],
+             ['LGW_20071130_E1_CAM1'],
+             ['LGW_20071130_E1_CAM2'],
+             ['LGW_20071130_E1_CAM3'],
+             ['LGW_20071130_E1_CAM5'],
+             ['LGW_20071130_E2_CAM1'],
+             ['LGW_20071130_E2_CAM2'],
+             ['LGW_20071130_E2_CAM5'],
+             ['LGW_20071206_E1_CAM1'], 
+             ['LGW_20071206_E1_CAM2'], 
+             ['LGW_20071206_E1_CAM3'], 
+             ['LGW_20071206_E1_CAM5'], 
+             ['LGW_20071207_E1_CAM2'],
+             ['LGW_20071207_E1_CAM3'], 
+             ['LGW_20071207_E1_CAM5'],
+            ]
+    dirnames = [x[0] for x in queue]
+
+    #queue = [['LGW_20071206_E1_CAM1', 'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', #'LGW_20071206_E1_CAM4', 
+    #        'LGW_20071206_E1_CAM5', 'LGW_20071207_E1_CAM2', 'LGW_20071207_E1_CAM3', #'LGW_20071207_E1_CAM4',
+    #        'LGW_20071207_E1_CAM5']]
+    #dirnames = ['1201']
+
+    queue = [
+            ['LGW_20071123_E1_CAM1', 'LGW_20071130_E1_CAM1', 'LGW_20071130_E2_CAM1', 'LGW_20071206_E1_CAM1'],
+            ['LGW_20071123_E1_CAM1', 'LGW_20071130_E1_CAM2', 'LGW_20071130_E2_CAM2', 'LGW_20071206_E1_CAM2', 'LGW_20071207_E1_CAM2'],
+            ['LGW_20071130_E1_CAM3', 'LGW_20071206_E1_CAM3', 'LGW_20071207_E1_CAM3'],
+            ['LGW_20071123_E1_CAM5', 'LGW_20071130_E1_CAM5', 'LGW_20071130_E2_CAM5', 'LGW_20071206_E1_CAM5', 'LGW_20071207_E1_CAM5']
+            ]
+    dirnames = ['CAM1', 'CAM2', 'CAM3', 'CAM5']
+
+    queue = [['LGW_20071123_E1_CAM1', 'LGW_20071123_E1_CAM2', 'LGW_20071123_E1_CAM5', 
+        'LGW_20071130_E1_CAM2', 'LGW_20071130_E1_CAM3', 'LGW_20071130_E1_CAM5', 
+        'LGW_20071130_E2_CAM1', 'LGW_20071130_E2_CAM2', 'LGW_20071130_E2_CAM5',
+        'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', 'LGW_20071206_E1_CAM5', 
+        'LGW_20071207_E1_CAM2', 'LGW_20071207_E1_CAM3', 'LGW_20071207_E1_CAM5'
+        ]]
+    dirnames = ['All_refine']
+
+    for ind, dectfiles in enumerate(queue):
+        dirname = dirnames[ind]
+        run_exp(dectfiles, dirname)
+    
 
 if __name__ == '__main__':
     #prepare_db()
-    #prepare_csv()
-    #xml_script()
+    prepare_csv()
+    xml_script()
     #prepare_gtf()
     #gtf_script()
+    exp_control()
 
-    dectfiles = ['LGW_20071123_E1_CAM1', 'LGW_20071123_E1_CAM2']
-    dirname = 'test'
-    run_exp(dectfiles, dirname)

@@ -191,14 +191,14 @@ class sed(imdb):
 
     def evaluate_detections(self, all_boxes, output_dir):
         filenames = self._write_results_file(all_boxes) 
-        aps = self._do_python_eval(output_dir)
-        if self.config['cleanup']:
-            for cls in self._classes:
-                if cls == '__background__':
-                    continue
-                filename = self._get_results_file_template().format(cls)
-                os.remove(filename)
-        print aps
+        #aps = self._do_python_eval(output_dir)
+        #if self.config['cleanup']:
+        #    for cls in self._classes:
+        #        if cls == '__background__':
+        #            continue
+        #        filename = self._get_results_file_template().format(cls)
+        #        os.remove(filename)
+        #print aps
         return filenames
 
     def _get_comp_id(self):

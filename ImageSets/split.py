@@ -1,14 +1,14 @@
 import re
 
-splitdate = 1113
-infile = 'refine_train.txt'
-outfile = '1113_refine.txt'
+splitdate = 1201
+infile = '1113_test.txt'
+outfile = 'test_cross.txt'
 
 def split(infile, outfile, splitdate):
  
     with open(infile) as f:
         data = [x.strip() for x in f.readlines()]
-
+    data = sorted(data)
     with open(outfile, 'w') as f:
         for img in data:
             date = int(img.split('_')[1][-4:])
@@ -31,5 +31,5 @@ def extract(allfile, out_file, splitdate):
         f.write('\n'.join(allimgs))
 
 if __name__ == '__main__':
-    #split(infile, outfile, splitdate)
-    extract(allfile, out_file, splitdate)
+    split(infile, outfile, splitdate)
+    #extract(allfile, out_file, splitdate)
