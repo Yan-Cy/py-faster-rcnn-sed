@@ -14,8 +14,12 @@ def parse_rec(annopath, imagename):
     """ Parse a INRIA-Person annotation file """
     objects = []
     imagepath = os.path.join(annopath, 'roi', imagename + '.roi')
-    with open(imagepath) as f:
-        data = f.read()
+    if not os.path.exists(imagepath):
+        #print imagepath
+        data = ''
+    else:
+        with open(imagepath) as f:
+            data = f.read()
     objs = re.findall('(\S+) (\d+) (\d+) (\d+) (\d+)', data)
 
     for ix, obj in enumerate(objs):
@@ -24,7 +28,12 @@ def parse_rec(annopath, imagename):
                                 float(obj[2]),
                                 float(obj[3]),
                                 float(obj[4])]
-        obj_struct['name'] = obj[0] 
+        if obj[0] == 'beginCellToEar' or obj[0] == 'climaxCellToEar' or obj[0] == 'endCellToEar':
+            obj_struct['name'] = 'CellToEar'
+        elif obj[0] == 'beginEmbrace' or obj[0] == 'climaxEmbrace' or obj[0] == 'endEmbrace':
+            obj_struct['name'] = 'Embrace'
+        else:
+            obj_struct['name'] = obj[0] 
         obj_struct['difficult'] = 0
         objects.append(obj_struct)
     return objects
@@ -106,7 +115,7 @@ def sed_eval(detpath,
     recs = {}
     for i, imagename in enumerate(imagenames):
         recs[imagename] = parse_rec(annopath, imagename)
-        if i % 100 == 0:
+        if i % 1000 == 0:
             print 'Reading annotation for {:d}/{:d}'.format(
                 i + 1, len(imagenames))
         # save
@@ -132,7 +141,11 @@ def sed_eval(detpath,
                                  'det': det}
 
     # read dets
+    #augs = ['begin', 'end', 'climax']
+    #lines = []
+    #for aug in augs:
     detfile = detpath.format(classname)
+    #print detfile
     with open(detfile, 'r') as f:
         lines = f.readlines()
 
@@ -192,7 +205,7 @@ def sed_eval(detpath,
     # compute precision recall
     fp = np.cumsum(fp)
     tp = np.cumsum(tp)
-    print npos
+    #print npos
     rec = tp / float(npos)
     # avoid divide by zero in case the first detection matches a difficult
     # ground truth

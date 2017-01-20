@@ -1,0 +1,19 @@
+|  Performance Summary Over and Ensemble of Subsets  |
+|            Key             |         Value         |
+|----------------------------+-----------------------+
+|               System Title |                   sed |
+|                Decision ID |           Observation |
+|              TOTALDURATION |                 50400 |
+|                       BETA |                 0.005 |
+|                     CostFA |                     1 |
+|                   CostMiss |                    10 |
+|                    Rtarget |                    20 |
+|          Combined DET Plot |          test.det.png |
+
+
+|                      |           Inputs            |                               Actual Decision DCR Analysis                                |              Minimum DCR Analysis               |
+|        Title         |  #Targ  |  #NTarg  |  #Sys  |  #CorDet  |  #Cor!Det  |  #FA  |  #Miss  |    RFA    |  PMiss   |   DCR    |  Dec. Tresh  |    RFA    |  PMiss   |   DCR    |  Dec. Thresh  |
+|----------------------+---------+----------+--------+-----------+------------+-------+---------+-----------+----------+----------+--------------+-----------+----------+----------+---------------+
+|   CellToEar Eventsed |     176 |        0 |      0 |         0 |          0 |     0 |     176 |   0.00000 |    1.000 |   1.0000 |           NA |   0.00000 |    1.000 |   1.0000 |           NaN |
+|     Embrace Eventsed |     155 |        0 |      0 |         0 |          0 |     0 |     155 |   0.00000 |    1.000 |   1.0000 |           NA |   0.00000 |    1.000 |   1.0000 |           NaN |
+|    Pointing Eventsed |     884 |        0 |      0 |         0 |          0 |     0 |     884 |   0.00000 |    1.000 |   1.0000 |           NA |   0.00000 |    1.000 |   1.0000 |           NaN |

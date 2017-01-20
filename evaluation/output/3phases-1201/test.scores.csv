@@ -1,0 +1,4 @@
+" |Title","Inputs|#Targ","Inputs|#NTarg","Inputs|#Sys","Actual Decision DCR Analysis|#CorDet","Actual Decision DCR Analysis|#Cor!Det","Actual Decision DCR Analysis|#FA","Actual Decision DCR Analysis|#Miss","Actual Decision DCR Analysis|RFA","Actual Decision DCR Analysis|PMiss","Actual Decision DCR Analysis|DCR","Actual Decision DCR Analysis|Dec. Tresh","Minimum DCR Analysis|RFA","Minimum DCR Analysis|PMiss","Minimum DCR Analysis|DCR","Minimum DCR Analysis|Dec. Thresh"
+"CellToEar Eventsed","176","0","0","0","0","0","176","0.00000"," 1.000","1.0000","NA","0.00000"," 1.000","1.0000","NaN"
+"Embrace Eventsed","155","0","0","0","0","0","155","0.00000"," 1.000","1.0000","NA","0.00000"," 1.000","1.0000","NaN"
+"Pointing Eventsed","884","0","0","0","0","0","884","0.00000"," 1.000","1.0000","NA","0.00000"," 1.000","1.0000","NaN"

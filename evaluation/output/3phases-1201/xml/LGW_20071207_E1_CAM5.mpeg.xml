@@ -1,0 +1,2574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viper xmlns="http://lamp.cfar.umd.edu/viper#" xmlns:data="http://lamp.cfar.umd.edu/viperdata#">
+  <config>
+    <descriptor name="Information" type="FILE">
+      <attribute dynamic="false" name="SOURCETYPE" type="http://lamp.cfar.umd.edu/viperdata#lvalue">
+        <data:lvalue-possibles>
+          <data:lvalue-enum value="SEQUENCE"/>
+          <data:lvalue-enum value="FRAMES"/>
+        </data:lvalue-possibles>
+      </attribute>
+      <attribute dynamic="false" name="NUMFRAMES" type="http://lamp.cfar.umd.edu/viperdata#dvalue"/>
+      <attribute dynamic="false" name="FRAMERATE" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+      <attribute dynamic="false" name="H-FRAME-SIZE" type="http://lamp.cfar.umd.edu/viperdata#dvalue"/>
+      <attribute dynamic="false" name="V-FRAME-SIZE" type="http://lamp.cfar.umd.edu/viperdata#dvalue"/>
+    </descriptor>
+    <descriptor name="CellToEar:Unmapped_Ref" type="OBJECT">
+      <attribute dynamic="true" name="BoundingBox" type="http://lamp.cfar.umd.edu/viperdata#bbox"/>
+      <attribute dynamic="false" name="DetectionDecision" type="http://lamp.cfar.umd.edu/viperdata#bvalue"/>
+      <attribute dynamic="false" name="DetectionScore" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+      <attribute dynamic="true" name="Point" type="http://lamp.cfar.umd.edu/viperdata#point"/>
+    </descriptor>
+    <descriptor name="Embrace:Unmapped_Ref" type="OBJECT">
+      <attribute dynamic="true" name="BoundingBox" type="http://lamp.cfar.umd.edu/viperdata#bbox"/>
+      <attribute dynamic="false" name="DetectionDecision" type="http://lamp.cfar.umd.edu/viperdata#bvalue"/>
+      <attribute dynamic="false" name="DetectionScore" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+      <attribute dynamic="true" name="Point" type="http://lamp.cfar.umd.edu/viperdata#point"/>
+    </descriptor>
+    <descriptor name="Pointing:Unmapped_Ref" type="OBJECT">
+      <attribute dynamic="true" name="BoundingBox" type="http://lamp.cfar.umd.edu/viperdata#bbox"/>
+      <attribute dynamic="false" name="DetectionDecision" type="http://lamp.cfar.umd.edu/viperdata#bvalue"/>
+      <attribute dynamic="false" name="DetectionScore" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+      <attribute dynamic="true" name="Point" type="http://lamp.cfar.umd.edu/viperdata#point"/>
+    </descriptor>
+  </config>
+  <data>
+    <sourcefile filename="LGW_20071207_E1_CAM5.mpeg">
+      <file id="0" name="Information">
+        <attribute name="FRAMERATE">
+          <data:fvalue value="1.0"/>
+        </attribute>
+        <attribute name="H-FRAME-SIZE">
+          <data:dvalue value="720"/>
+        </attribute>
+        <attribute name="NUMFRAMES">
+          <data:dvalue value="188832"/>
+        </attribute>
+        <attribute name="SOURCETYPE"/>
+        <attribute name="V-FRAME-SIZE">
+          <data:dvalue value="576"/>
+        </attribute>
+      </file>
+      <object name="CellToEar:Unmapped_Ref" id="0" framespan="43929:43940">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 7 | FS: 43929:43940 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="1" framespan="107052:107066">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 30 | FS: 107052:107066 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="2" framespan="152303:152324">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 36 | FS: 152303:152324 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="3" framespan="78320:78338">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 17 | FS: 78320:78338 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="4" framespan="77478:77508">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 16 | FS: 77478:77508 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="5" framespan="117919:117936">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 34 | FS: 117919:117936 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="6" framespan="87462:87549">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 25 | FS: 87462:87549 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="7" framespan="88021:88068">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 26 | FS: 88021:88068 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="8" framespan="75798:75805">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 13 | FS: 75798:75805 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="9" framespan="116606:116627">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 33 | FS: 116606:116627 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="10" framespan="1177:1210">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 0 | FS: 1177:1210 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="11" framespan="82617:82643">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 21 | FS: 82617:82643 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="12" framespan="159614:159631">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 37 | FS: 159614:159631 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="13" framespan="11661:11676">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 2 | FS: 11661:11676 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="14" framespan="90702:90714">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 28 | FS: 90702:90714 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="15" framespan="108979:109009">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 31 | FS: 108979:109009 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="16" framespan="79404:79547">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 19 | FS: 79404:79547 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="17" framespan="52517:52533">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 12 | FS: 52517:52533 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="18" framespan="25698:25712">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 4 | FS: 25698:25712 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="19" framespan="91305:91314">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 29 | FS: 91305:91314 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="20" framespan="77294:77316">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 14 | FS: 77294:77316 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="21" framespan="85025:85060">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 22 | FS: 85025:85060 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="22" framespan="88392:88407">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 27 | FS: 88392:88407 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="23" framespan="38792:38813">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 5 | FS: 38792:38813 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="24" framespan="77367:77381">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 15 | FS: 77367:77381 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="25" framespan="8014:8026">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 1 | FS: 8014:8026 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="26" framespan="111956:111978">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 32 | FS: 111956:111978 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="27" framespan="150383:150403">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 35 | FS: 150383:150403 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="28" framespan="167786:167810">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 38 | FS: 167786:167810 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="29" framespan="167786:167808">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 39 | FS: 167786:167808 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="30" framespan="79470:79779">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 20 | FS: 79470:79779 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="31" framespan="51277:51282">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 10 | FS: 51277:51282 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="32" framespan="85260:85272">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 23 | FS: 85260:85272 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="33" framespan="47415:47429">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 8 | FS: 47415:47429 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="34" framespan="51243:51252">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 9 | FS: 51243:51252 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="35" framespan="78585:78598">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 18 | FS: 78585:78598 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="36" framespan="51631:51641">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 11 | FS: 51631:51641 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="37" framespan="40140:40153">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 6 | FS: 40140:40153 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="38" framespan="25457:25466">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 3 | FS: 25457:25466 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="CellToEar:Unmapped_Ref" id="39" framespan="86713:86725">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: CellToEar | ID: 24 | FS: 86713:86725 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Ref" id="0" framespan="154841:154872">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Embrace | ID: 7 | FS: 154841:154872 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Ref" id="1" framespan="471:556">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Embrace | ID: 0 | FS: 471:556 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Ref" id="2" framespan="11275:11609">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Embrace | ID: 1 | FS: 11275:11609 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Ref" id="3" framespan="154793:154828">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Embrace | ID: 6 | FS: 154793:154828 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Ref" id="4" framespan="176617:176712">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Embrace | ID: 8 | FS: 176617:176712 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Ref" id="5" framespan="36034:36186">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Embrace | ID: 3 | FS: 36034:36186 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Ref" id="6" framespan="102264:102302">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Embrace | ID: 5 | FS: 102264:102302 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Ref" id="7" framespan="32907:32963">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Embrace | ID: 2 | FS: 32907:32963 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Embrace:Unmapped_Ref" id="8" framespan="85077:85106">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Embrace | ID: 4 | FS: 85077:85106 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="0" framespan="47975:48000">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 39 | FS: 47975:48000 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="1" framespan="120483:120574">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 124 | FS: 120483:120574 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="2" framespan="149059:149065">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 138 | FS: 149059:149065 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="3" framespan="51165:51178">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 44 | FS: 51165:51178 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="4" framespan="116215:116230">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 116 | FS: 116215:116230 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="5" framespan="66809:66819">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 54 | FS: 66809:66819 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="6" framespan="103633:103673">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 102 | FS: 103633:103673 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="7" framespan="27986:27991">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 17 | FS: 27986:27991 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="8" framespan="105406:105409">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 106 | FS: 105406:105409 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="9" framespan="38891:38923">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 28 | FS: 38891:38923 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="10" framespan="72994:73020">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 60 | FS: 72994:73020 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="11" framespan="150238:150244">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 141 | FS: 150238:150244 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="12" framespan="28893:28916">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 20 | FS: 28893:28916 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="13" framespan="158301:158311">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 148 | FS: 158301:158311 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="14" framespan="49572:49575">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 43 | FS: 49572:49575 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="15" framespan="156363:156390">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 147 | FS: 156363:156390 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="16" framespan="120575:120575">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 125 | FS: 120575:120575 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="17" framespan="28807:28847">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 18 | FS: 28807:28847 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="18" framespan="111190:111225">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 112 | FS: 111190:111225 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="19" framespan="90772:90776">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 85 | FS: 90772:90776 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="20" framespan="155023:155045">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 145 | FS: 155023:155045 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="21" framespan="152353:152359">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 143 | FS: 152353:152359 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="22" framespan="98139:98181">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 96 | FS: 98139:98181 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="23" framespan="118693:118729">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 122 | FS: 118693:118729 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="24" framespan="19197:19204">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 11 | FS: 19197:19204 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="25" framespan="117056:117067">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 117 | FS: 117056:117067 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="26" framespan="86240:86272">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 80 | FS: 86240:86272 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="27" framespan="54677:54714">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 49 | FS: 54677:54714 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="28" framespan="80474:80508">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 72 | FS: 80474:80508 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="29" framespan="48191:48198">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 41 | FS: 48191:48198 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="30" framespan="71358:71388">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 58 | FS: 71358:71388 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="31" framespan="15492:15500">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 5 | FS: 15492:15500 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="32" framespan="15587:15611">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 6 | FS: 15587:15611 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="33" framespan="171014:171027">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 155 | FS: 171014:171027 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="34" framespan="117515:117546">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 119 | FS: 117515:117546 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="35" framespan="104174:104180">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 103 | FS: 104174:104180 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="36" framespan="82641:82683">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 73 | FS: 82641:82683 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="37" framespan="47981:47997">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 40 | FS: 47981:47997 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="38" framespan="54638:54675">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 48 | FS: 54638:54675 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="39" framespan="88305:88316">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 82 | FS: 88305:88316 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="40" framespan="171107:171130">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 156 | FS: 171107:171130 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="41" framespan="130030:130083">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 128 | FS: 130030:130083 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="42" framespan="86029:86034">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 79 | FS: 86029:86034 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="43" framespan="107073:107093">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 108 | FS: 107073:107093 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="44" framespan="144125:144165">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 130 | FS: 144125:144165 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="45" framespan="16651:16658">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 7 | FS: 16651:16658 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="46" framespan="119725:119760">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 123 | FS: 119725:119760 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="47" framespan="91415:91455">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 89 | FS: 91415:91455 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="48" framespan="74028:74031">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 61 | FS: 74028:74031 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="49" framespan="82641:82653">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 74 | FS: 82641:82653 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="50" framespan="117203:117268">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 118 | FS: 117203:117268 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="51" framespan="91294:91305">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 88 | FS: 91294:91305 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="52" framespan="101918:101927">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 99 | FS: 101918:101927 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="53" framespan="72043:72054">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 59 | FS: 72043:72054 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="54" framespan="53429:53440">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 47 | FS: 53429:53440 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="55" framespan="63450:63487">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 53 | FS: 63450:63487 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="56" framespan="158337:158349">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 149 | FS: 158337:158349 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="57" framespan="91484:91506">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 90 | FS: 91484:91506 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="58" framespan="70817:70822">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 57 | FS: 70817:70822 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="59" framespan="146902:146915">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 133 | FS: 146902:146915 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="60" framespan="92826:92843">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 92 | FS: 92826:92843 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="61" framespan="130127:130184">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 129 | FS: 130127:130184 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="62" framespan="146561:146708">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 132 | FS: 146561:146708 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="63" framespan="173298:173398">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 160 | FS: 173298:173398 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="64" framespan="97856:97904">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 95 | FS: 97856:97904 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="65" framespan="74121:74128">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 62 | FS: 74121:74128 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="66" framespan="48308:48348">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 42 | FS: 48308:48348 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="67" framespan="104828:104840">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 104 | FS: 104828:104840 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="68" framespan="92637:92722">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 91 | FS: 92637:92722 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="69" framespan="45245:45300">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 34 | FS: 45245:45300 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="70" framespan="90131:90162">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 84 | FS: 90131:90162 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="71" framespan="13301:13619">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 2 | FS: 13301:13619 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="72" framespan="23807:23818">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 15 | FS: 23807:23818 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="73" framespan="51937:51969">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 46 | FS: 51937:51969 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="74" framespan="171735:171747">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 158 | FS: 171735:171747 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="75" framespan="46632:46641">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 36 | FS: 46632:46641 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="76" framespan="155478:155526">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 146 | FS: 155478:155526 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="77" framespan="90795:90810">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 86 | FS: 90795:90810 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="78" framespan="171696:171714">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 157 | FS: 171696:171714 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="79" framespan="45386:45412">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 35 | FS: 45386:45412 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="80" framespan="111678:111714">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 113 | FS: 111678:111714 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="81" framespan="27666:27738">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 16 | FS: 27666:27738 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="82" framespan="56000:56145">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 50 | FS: 56000:56145 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="83" framespan="171794:171834">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 159 | FS: 171794:171834 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="84" framespan="56193:56445">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 51 | FS: 56193:56445 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="85" framespan="6972:7043">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 0 | FS: 6972:7043 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="86" framespan="146344:146351">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 131 | FS: 146344:146351 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="87" framespan="101752:101764">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 98 | FS: 101752:101764 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="88" framespan="29869:29873">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 22 | FS: 29869:29873 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="89" framespan="117836:117870">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 120 | FS: 117836:117870 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="90" framespan="159275:159291">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 151 | FS: 159275:159291 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="91" framespan="148818:148835">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 137 | FS: 148818:148835 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="92" framespan="105252:105274">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 105 | FS: 105252:105274 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="93" framespan="79291:79310">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 68 | FS: 79291:79310 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="94" framespan="167771:167791">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 153 | FS: 167771:167791 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="95" framespan="19064:19159">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 9 | FS: 19064:19159 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="96" framespan="20230:20240">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 12 | FS: 20230:20240 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="97" framespan="95265:95306">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 93 | FS: 95265:95306 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="98" framespan="111056:111080">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 111 | FS: 111056:111080 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="99" framespan="41606:41610">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 31 | FS: 41606:41610 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="100" framespan="102760:102781">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 100 | FS: 102760:102781 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="101" framespan="113746:113750">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 114 | FS: 113746:113750 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="102" framespan="33016:33066">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 26 | FS: 33016:33066 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="103" framespan="21400:21437">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 13 | FS: 21400:21437 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="104" framespan="15411:15417">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 4 | FS: 15411:15417 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="105" framespan="61767:61819">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 52 | FS: 61767:61819 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="106" framespan="19030:19035">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 8 | FS: 19030:19035 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="107" framespan="79955:79982">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 70 | FS: 79955:79982 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="108" framespan="170275:170311">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 154 | FS: 170275:170311 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="109" framespan="149107:149114">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 139 | FS: 149107:149114 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="110" framespan="37551:37566">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 27 | FS: 37551:37566 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="111" framespan="147355:147362">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 135 | FS: 147355:147362 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="112" framespan="83171:83192">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 76 | FS: 83171:83192 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="113" framespan="147319:147322">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 134 | FS: 147319:147322 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="114" framespan="102978:102994">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 101 | FS: 102978:102994 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="115" framespan="158732:158760">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 150 | FS: 158732:158760 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="116" framespan="28846:28860">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 19 | FS: 28846:28860 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="117" framespan="74674:74710">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 63 | FS: 74674:74710 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="118" framespan="51771:51776">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 45 | FS: 51771:51776 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="119" framespan="47068:47084">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 37 | FS: 47068:47084 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="120" framespan="95739:95751">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 94 | FS: 95739:95751 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="121" framespan="151045:151074">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 142 | FS: 151045:151074 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="122" framespan="78878:78883">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 67 | FS: 78878:78883 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="123" framespan="107238:107252">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 109 | FS: 107238:107252 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="124" framespan="79778:79789">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 69 | FS: 79778:79789 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="125" framespan="147507:147579">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 136 | FS: 147507:147579 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="126" framespan="8717:8741">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 1 | FS: 8717:8741 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="127" framespan="83674:83769">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 77 | FS: 83674:83769 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="128" framespan="80458:80469">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 71 | FS: 80458:80469 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="129" framespan="121039:121045">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 127 | FS: 121039:121045 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="130" framespan="32890:32930">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 25 | FS: 32890:32930 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="131" framespan="108338:108421">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 110 | FS: 108338:108421 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="132" framespan="99955:99972">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 97 | FS: 99955:99972 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="133" framespan="19099:19105">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 10 | FS: 19099:19105 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="134" framespan="70696:70770">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 56 | FS: 70696:70770 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="135" framespan="41783:41795">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 32 | FS: 41783:41795 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="136" framespan="32147:32169">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 24 | FS: 32147:32169 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="137" framespan="22300:22314">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 14 | FS: 22300:22314 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="138" framespan="90970:91006">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 87 | FS: 90970:91006 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="139" framespan="76956:76991">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 64 | FS: 76956:76991 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="140" framespan="86594:86618">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 81 | FS: 86594:86618 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="141" framespan="41379:41432">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 30 | FS: 41379:41432 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="142" framespan="78728:78739">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 66 | FS: 78728:78739 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="143" framespan="78465:78555">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 65 | FS: 78465:78555 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="144" framespan="90024:90109">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 83 | FS: 90024:90109 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="145" framespan="153842:153848">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 144 | FS: 153842:153848 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="146" framespan="41154:41331">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 29 | FS: 41154:41331 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="147" framespan="150112:150124">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 140 | FS: 150112:150124 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="148" framespan="30771:30782">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 23 | FS: 30771:30782 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="149" framespan="83015:83030">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 75 | FS: 83015:83030 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="150" framespan="69396:69427">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 55 | FS: 69396:69427 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="151" framespan="114546:114581">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 115 | FS: 114546:114581 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="152" framespan="120971:120998">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 126 | FS: 120971:120998 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="153" framespan="29312:29349">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 21 | FS: 29312:29349 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="154" framespan="167769:167795">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 152 | FS: 167769:167795 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="155" framespan="13522:13589">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 3 | FS: 13522:13589 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="156" framespan="85654:85665">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 78 | FS: 85654:85665 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="157" framespan="45237:45274">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 33 | FS: 45237:45274 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="158" framespan="47832:47843">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 38 | FS: 47832:47843 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="159" framespan="106874:106891">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 107 | FS: 106874:106891 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+      <object name="Pointing:Unmapped_Ref" id="160" framespan="117856:117869">
+        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM5.mpeg | EVENT: Pointing | ID: 121 | FS: 117856:117869 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: ../../gtf_xml/LGW_20071207_E1_CAM5.xml)
+Observation converted from REF to SYS: DetectionScore and DetectionDecision are faked values -->
+        <attribute name="BoundingBox"/>
+        <attribute name="DetectionDecision">
+          <data:bvalue value="false"/>
+        </attribute>
+        <attribute name="DetectionScore">
+          <data:fvalue value="0"/>
+        </attribute>
+        <attribute name="Point"/>
+      </object>
+    </sourcefile>
+  </data>
+</viper>

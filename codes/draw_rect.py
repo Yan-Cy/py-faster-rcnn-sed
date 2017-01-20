@@ -2,6 +2,7 @@ import Image, ImageDraw
 import os
 import re
 
+"""
 output_path = '/home/chenyang/Results/'
 img_path = '/home/chenyang/py-faster-rcnn/data/sed/data/Images'
 gt_path = '/home/chenyang/sed/data/Annotations/roi/'
@@ -120,22 +121,73 @@ def draw_box(file_set, gt_path, output_path, color):
             img.save(output_file, 'jpeg')
     
     print 'Total ground truth:', count
+"""
+
+def draw_bbox(src, dst, bbox, color):
+    os.path.exists(src)
+    img = Image.open(src)
+    draw = ImageDraw.Draw(img)
+    draw.rectangle([(int(bbox[1]), int(bbox[2])), (int(bbox[3]), int(bbox[4]))], outline=color)
+    img.save(dst, 'jpeg')
+    del draw
+
+def draw_rect(imgset, imgpath, rectpath, dstpath, color, all_cls):
+    with open(imgset) as f:
+        files = f.readlines()
+    count = 0
+    for name in files:
+        name = name.strip()
+        imgfile = os.path.join(imgpath, name + '.jpg')
+        os.path.exists(imgfile)
+        rectfile = os.path.join(rectpath, name + '.roi')
+        os.path.exists(rectfile)
+
+        with open(rectfile) as f:
+            bboxes = f.readlines()
+
+        for bbox in bboxes:
+            bbox = bbox.strip()
+            bbox = bbox.split(' ')
+
+            if bbox[0] not in all_cls:
+                continue
+            count += 1
+            dstfile = os.path.join(dstpath, bbox[0], name + '_' + '_'.join(bbox) + '.jpg')
+            draw_bbox(imgfile, dstfile, bbox, color)
+
+    print 'Total bbox paint:', count
+
 
 if __name__ == '__main__':
-     
-    for cls in classes:
-        result_file = os.path.join(result_dir, 'zf_'+ cls + '.txt')
-        os.path.exists(result_file)
-        with open(result_file) as f:
-            results = [x.strip() for x in f.readlines()]
-        draw_dect(results, cls)
-    
+    trainset = '/home/chenyang/lib/ImageSets/refine_train.txt'
+    traindst = '/home/chenyang/sed_GT/train/'
+
+    testset = '/home/chenyang/lib/ImageSets/refine_test.txt'
+    testdst = '/home/chenyang/sed_GT/test/'
+
+    imgpath = '/home/chenyang/sed/data/Images/'
+    rectpath = '/home/chenyang/sed/data/Annotations/refine/'
+    color = 'red'
+    all_cls = ['CellToEar', 'Embrace', 'Pointing']
+
+    draw_rect(trainset, imgpath, rectpath, traindst, color, all_cls)
+    draw_rect(testset, imgpath, rectpath, testdst, color, all_cls)
+
+    # draw results from result_dir
+    #for cls in classes:
+    #    result_file = os.path.join(result_dir, 'zf_'+ cls + '.txt')
+    #    os.path.exists(result_file)
+    #    with open(result_file) as f:
+    #        results = [x.strip() for x in f.readlines()]
+    #    draw_dect(results, cls)
+
+    # draw ground truth in test.txt
     # draw_box(file_set, gt_path, output_path, 'red')
     #assert os.path.exists(result_file)
-#with open(result_file) as f:
-#    results = [x.strip() for x in f.readlines()]
+    #with open(result_file) as f:
+    #    results = [x.strip() for x in f.readlines()]
 
-#import json
-#gt_file = '/home/chenyang/py-faster-rcnn/data/sed/data/Annotations/CellToEar.refine.label.json'
-#assert os.path.exists(gt_file)
+    #import json
+    #gt_file = '/home/chenyang/py-faster-rcnn/data/sed/data/Annotations/CellToEar.refine.label.json'
+    #assert os.path.exists(gt_file)
 
