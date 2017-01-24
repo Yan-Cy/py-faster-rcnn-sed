@@ -11,9 +11,9 @@
 |          Combined DET Plot |          test.det.png |
 
 
-|                      |           Inputs            |                               Actual Decision DCR Analysis                                |              Minimum DCR Analysis               |
-|        Title         |  #Targ  |  #NTarg  |  #Sys  |  #CorDet  |  #Cor!Det  |  #FA  |  #Miss  |    RFA    |  PMiss   |   DCR    |  Dec. Tresh  |    RFA    |  PMiss   |   DCR    |  Dec. Thresh  |
-|----------------------+---------+----------+--------+-----------+------------+-------+---------+-----------+----------+----------+--------------+-----------+----------+----------+---------------+
-|   CellToEar Eventsed |     176 |        0 |      0 |         0 |          0 |     0 |     176 |   0.00000 |    1.000 |   1.0000 |           NA |   0.00000 |    1.000 |   1.0000 |           NaN |
-|     Embrace Eventsed |     155 |        0 |      0 |         0 |          0 |     0 |     155 |   0.00000 |    1.000 |   1.0000 |           NA |   0.00000 |    1.000 |   1.0000 |           NaN |
-|    Pointing Eventsed |     884 |        0 |      0 |         0 |          0 |     0 |     884 |   0.00000 |    1.000 |   1.0000 |           NA |   0.00000 |    1.000 |   1.0000 |           NaN |
+|                      |           Inputs            |                                Actual Decision DCR Analysis                                |               Minimum DCR Analysis               |                            DET Curve Graphs                            |
+|        Title         |  #Targ  |  #NTarg  |  #Sys  |  #CorDet  |  #Cor!Det  |  #FA  |  #Miss  |    RFA     |  PMiss   |   DCR    |  Dec. Tresh  |    RFA     |  PMiss   |   DCR    |  Dec. Thresh  |           DET Curve            |            Threshold Curve            |
+|----------------------+---------+----------+--------+-----------+------------+-------+---------+------------+----------+----------+--------------+------------+----------+----------+---------------+--------------------------------+---------------------------------------+
+|   CellToEar Eventsed |     176 |     3051 |   3166 |        10 |       2950 |   101 |     166 |    7.21429 |    0.943 |   0.9793 |       0.5002 |   22.57143 |    0.835 |   0.9481 |         0.405 |   test.det.CellToEar_Event.png |   test.det.CellToEar_Event.thresh.png |
+|     Embrace Eventsed |     155 |     4340 |   4482 |        67 |       3623 |   717 |      88 |   51.21429 |    0.568 |   0.8238 |       0.5001 |   54.71429 |    0.529 |   0.8026 |         0.494 |     test.det.Embrace_Event.png |     test.det.Embrace_Event.thresh.png |
+|    Pointing Eventsed |     884 |        0 |      0 |         0 |          0 |     0 |     884 |    0.00000 |    1.000 |   1.0000 |           NA |    0.00000 |    1.000 |   1.0000 |           NaN |                                |                                       |

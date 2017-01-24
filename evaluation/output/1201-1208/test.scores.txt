@@ -1,0 +1,19 @@
+|  Performance Summary Over and Ensemble of Subsets  |
+|            Key             |         Value         |
+|----------------------------+-----------------------+
+|               System Title |                   sed |
+|                Decision ID |           Observation |
+|              TOTALDURATION |                 43200 |
+|                       BETA |                 0.005 |
+|                     CostFA |                     1 |
+|                   CostMiss |                    10 |
+|                    Rtarget |                    20 |
+|          Combined DET Plot |          test.det.png |
+
+
+|                      |           Inputs            |                                Actual Decision DCR Analysis                                |               Minimum DCR Analysis               |                            DET Curve Graphs                            |
+|        Title         |  #Targ  |  #NTarg  |  #Sys  |  #CorDet  |  #Cor!Det  |  #FA  |  #Miss  |    RFA     |  PMiss   |   DCR    |  Dec. Tresh  |    RFA     |  PMiss   |   DCR    |  Dec. Thresh  |           DET Curve            |            Threshold Curve            |
+|----------------------+---------+----------+--------+-----------+------------+-------+---------+------------+----------+----------+--------------+------------+----------+----------+---------------+--------------------------------+---------------------------------------+
+|   CellToEar Eventsed |     173 |     1202 |   1302 |         3 |       1159 |    43 |     170 |    3.58333 |    0.983 |   1.0006 |       0.5005 |   52.25000 |    0.630 |   0.8913 |         0.234 |   test.det.CellToEar_Event.png |   test.det.CellToEar_Event.thresh.png |
+|     Embrace Eventsed |     155 |      686 |    766 |        47 |        450 |   236 |     108 |   19.66667 |    0.697 |   0.7951 |       0.4998 |   36.33333 |    0.529 |   0.7107 |         0.344 |     test.det.Embrace_Event.png |     test.det.Embrace_Event.thresh.png |
+|    Pointing Eventsed |     761 |      943 |   1266 |        59 |        832 |   111 |     702 |    9.25000 |    0.922 |   0.9687 |       0.5016 |   59.25000 |    0.633 |   0.9296 |         0.227 |    test.det.Pointing_Event.png |    test.det.Pointing_Event.thresh.png |

@@ -27,12 +27,10 @@ class sed(imdb):
         self._devkit_path = devkit_path
         self._data_path = os.path.join(self._devkit_path, 'data')
         self._classes = ('__background__', # always index 0
-                         'beginEmbrace',
-                         'climaxEmbrace',
-                         'endEmbrace',
-                         'beginCellToEar',
-                         'climaxCellToEar',
-                         'endCellToEar'
+                         'Embrace',
+                         'Pointing',
+                         'CellToEar',
+                         'Pose'
                          )
         self._class_to_ind = dict(zip(self.classes, xrange(self.num_classes)))
         self._image_ext = ['.jpg', '.png']
@@ -148,7 +146,12 @@ class sed(imdb):
             x2 = float(obj[3])
             y2 = float(obj[4])
             #print x1, y1, x2, y2
-            file_cls = obj[0]
+            if obj[0] in ['beginEmbrace', 'endEmbrace', 'climaxEmbrace']:
+                file_cls = 'Embrace'
+            elif obj[0] in ['beginCellToEar', 'endCellToEar', 'climaxCellToEar']:
+                file_cls = 'CellToEar'
+            else:
+                file_cls = obj[0]
             #if self._class_to_ind.has_key(file_cls):
             cls = self._class_to_ind[file_cls]
             overlaps[ix, cls] = 1.0
@@ -193,14 +196,14 @@ class sed(imdb):
 
     def evaluate_detections(self, all_boxes, output_dir):
         filenames = self._write_results_file(all_boxes) 
-        #aps = self._do_python_eval(output_dir)
-        #if self.config['cleanup']:
-        #    for cls in self._classes:
-        #        if cls == '__background__':
-        #            continue
-        #        filename = self._get_results_file_template().format(cls)
-        #        os.remove(filename)
-        #print aps
+        aps = self._do_python_eval(output_dir)
+        if self.config['cleanup']:
+            for cls in self._classes:
+                if cls == '__background__':
+                    continue
+                filename = self._get_results_file_template().format(cls)
+                os.remove(filename)
+        print aps
         return filenames
 
     def _get_comp_id(self):

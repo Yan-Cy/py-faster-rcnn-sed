@@ -58,9 +58,9 @@ def run_exp(dectfiles, dirname):
     os.system('chmod +x eval.sh')
     os.system('./eval.sh')
 
-CLASSES = ['Embrace', 'CellToEar']
-dettemplate = '/home/chenyang/py-faster-rcnn/data/sed/results/comp4_9591f2fd-7e8e-487e-8a8e-afbeaee21c94_det_test_{}.txt'
-threshold = 0.3
+CLASSES = ['Embrace', 'CellToEar', 'Pointing']
+dettemplate = '/home/chenyang/py-faster-rcnn/data/sed/results/1113_vgg_{}.txt'
+threshold = 0.5
 
 def prepare_csv():
     detcsv = dict()
@@ -70,7 +70,7 @@ def prepare_csv():
         detfile = dettemplate.format(cls)
         with open(detfile) as f:
             dets = [x.strip().split(' ') for x in f.readlines()]
-        
+        #print len(dets) 
         all_results = dict()
         for det in dets:
             data = det[0].split('_')
@@ -92,7 +92,8 @@ def prepare_csv():
             
             imgdets = sorted(all_results[imgname], key=lambda x: (x[0], x[1]))
             imgdets = [x for x in imgdets if x[1] > 0.1]
-           
+          
+            #print len(imgdets)
             if len(imgdets) == 0:
                 continue
 
@@ -110,12 +111,12 @@ def prepare_csv():
 
                 if imgdet[0] == right:
                     continue
-                if imgdet[0] - right < 30:
+                if imgdet[0] - right < 100:
                     right = imgdet[0]
                     total = total + imgdet[1]
                     count = count + 1
                 else:
-                    if right - left > 20:
+                    if right - left > 50:
                         segment = '%d:%d'%(left, right)
                         id = id + 1
                         score = total * 1.0 / count
@@ -208,13 +209,13 @@ def prepare_csv_3phases():
                 detcsv[imgname] = []
             
             imgdets = sorted(all_results[imgname], key=lambda x: (x[0], x[1]))
-#            imgdets = [x for x in imgdets if x[1] > 0.05]
+            imgdets = [x for x in imgdets if x[1] > 0.05]
             
             climaxdets = sorted(climax_results[imgname], key=lambda x: (x[0], x[1]))
-#            climaxdets = [x for x in climaxdets if x[1] > 0.05]
+            climaxdets = [x for x in climaxdets if x[1] > 0.05]
             
             enddets = sorted(end_results[imgname], key=lambda x: (x[0], x[1]))
-#            enddets = [x for x in enddets if x[1] > 0.05]
+            enddets = [x for x in enddets if x[1] > 0.05]
             
 
             if len(imgdets) == 0:
@@ -234,7 +235,7 @@ def prepare_csv_3phases():
 
                 if imgdet[0] == right:
                     continue
-                if imgdet[0] - right < 50:
+                if imgdet[0] - right < 30:
                     right = imgdet[0]
                     total = total + imgdet[1]
                     count = count + 1
@@ -255,7 +256,7 @@ def prepare_csv_3phases():
                             count = count + 1
                             endFlag = True
 
-                    if climaxflag and endflag and right - left > 30:
+                    if right - left > 30:
                         segment = '%d:%d'%(left, right)
                         id = id + 1
                         score = total * 1.0 / count
@@ -286,7 +287,7 @@ def xml_script():
 
     with open(outfile, 'w') as f:
         empty_cmd = ['/mnt/sdc/chenyang/F4DE/TrecVid08/tools/TV08ViperValidator/TV08ViperValidator.pl',
-                    '--limitto', 'CellToEar,Embrace',
+                    '--limitto', 'CellToEar,Embrace,Pointing',
                     '--Remove', 'ALL',
                     '--write', outdir,
                     templatedir
@@ -297,7 +298,7 @@ def xml_script():
         for csvfile in csvfiles:
             name = os.path.splitext(csvfile)[0]
             cmd = ['/mnt/sdc/chenyang/F4DE/TrecVid08/tools/TV08ViperValidator/TV08ViperValidator.pl',
-                '--limitto', 'CellToEar,Embrace',
+                '--limitto', 'CellToEar,Embrace,Pointing',
                 '--fps', '25',
                 '--write', outdir,
                 '--insertCSV', os.path.join(detdir, name + '.csv'),
@@ -406,11 +407,27 @@ def exp_control():
         ]]
     dirnames = ['All_refine']
 
-    queue = [['LGW_20071206_E1_CAM1', 'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', #'LGW_20071206_E1_CAM4', 
-            'LGW_20071206_E1_CAM5', 'LGW_20071207_E1_CAM2', 'LGW_20071207_E1_CAM3', #'LGW_20071207_E1_CAM4',
-            'LGW_20071207_E1_CAM5']]
-    dirnames = ['3phases-1201']
+    #queue = [['LGW_20071206_E1_CAM1', 'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', #'LGW_20071206_E1_CAM4', 
+    #        'LGW_20071206_E1_CAM5', 'LGW_20071207_E1_CAM2', 'LGW_20071207_E1_CAM3', #'LGW_20071207_E1_CAM4',
+    #        'LGW_20071207_E1_CAM5']]
+    #dirnames = ['3phases-1201']
 
+
+    queue = [
+         ['LGW_20071123_E1_CAM1', 'LGW_20071123_E1_CAM2', 'LGW_20071123_E1_CAM5', 
+        'LGW_20071130_E1_CAM2', 'LGW_20071130_E1_CAM3', 'LGW_20071130_E1_CAM5', 
+        'LGW_20071130_E2_CAM1', 'LGW_20071130_E2_CAM2', 'LGW_20071130_E2_CAM5',
+        ],
+        ['LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', 'LGW_20071206_E1_CAM5', 
+        'LGW_20071207_E1_CAM2', 'LGW_20071207_E1_CAM3', 'LGW_20071207_E1_CAM5'
+        ], 
+        ['LGW_20071123_E1_CAM1', 'LGW_20071123_E1_CAM2', 'LGW_20071123_E1_CAM5', 
+        'LGW_20071130_E1_CAM2', 'LGW_20071130_E1_CAM3', 'LGW_20071130_E1_CAM5', 
+        'LGW_20071130_E2_CAM1', 'LGW_20071130_E2_CAM2', 'LGW_20071130_E2_CAM5',
+        'LGW_20071206_E1_CAM2', 'LGW_20071206_E1_CAM3', 'LGW_20071206_E1_CAM5', 
+        'LGW_20071207_E1_CAM2', 'LGW_20071207_E1_CAM3', 'LGW_20071207_E1_CAM5'
+        ] ]
+    dirnames = ['1113-1201', '1201-1208', '1113-1208']
 
 
     for ind, dectfiles in enumerate(queue):
@@ -420,8 +437,8 @@ def exp_control():
 
 if __name__ == '__main__':
     #prepare_db()
-    #prepare_csv()
-    prepare_csv_3phases()
+    prepare_csv()
+    #prepare_csv_3phases()
     xml_script()
     #prepare_gtf()
     #gtf_script()
