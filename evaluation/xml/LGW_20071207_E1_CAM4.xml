@@ -25,12 +25,6 @@
       <attribute dynamic="false" name="DetectionScore" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
       <attribute dynamic="true" name="Point" type="http://lamp.cfar.umd.edu/viperdata#point"/>
     </descriptor>
-    <descriptor name="Pointing" type="OBJECT">
-      <attribute dynamic="true" name="BoundingBox" type="http://lamp.cfar.umd.edu/viperdata#bbox"/>
-      <attribute dynamic="false" name="DetectionDecision" type="http://lamp.cfar.umd.edu/viperdata#bvalue"/>
-      <attribute dynamic="false" name="DetectionScore" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
-      <attribute dynamic="true" name="Point" type="http://lamp.cfar.umd.edu/viperdata#point"/>
-    </descriptor>
   </config>
   <data>
     <sourcefile filename="LGW_20071207_E1_CAM4.mpeg">
@@ -49,157 +43,91 @@
           <data:dvalue value="576"/>
         </attribute>
       </file>
-      <object name="CellToEar" id="0" framespan="109545:109665">
+      <object name="CellToEar" id="0" framespan="168515:168575">
         <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision">
           <data:bvalue value="false"/>
         </attribute>
         <attribute name="DetectionScore">
-          <data:fvalue value="0.170667"/>
+          <data:fvalue value="0.096000"/>
         </attribute>
         <attribute name="Point"/>
       </object>
-      <object name="CellToEar" id="1" framespan="166825:167385">
+      <object name="CellToEar" id="1" framespan="169105:169455">
         <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision">
           <data:bvalue value="false"/>
         </attribute>
         <attribute name="DetectionScore">
-          <data:fvalue value="0.468267"/>
+          <data:fvalue value="0.092765"/>
         </attribute>
         <attribute name="Point"/>
       </object>
-      <object name="CellToEar" id="2" framespan="167505:167665">
+      <object name="CellToEar" id="2" framespan="169155:169455">
         <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision">
           <data:bvalue value="false"/>
         </attribute>
         <attribute name="DetectionScore">
-          <data:fvalue value="0.448000"/>
+          <data:fvalue value="0.092750"/>
         </attribute>
         <attribute name="Point"/>
       </object>
-      <object name="CellToEar" id="3" framespan="168185:168665">
+      <object name="Embrace" id="0" framespan="166885:166985">
         <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision">
           <data:bvalue value="false"/>
         </attribute>
         <attribute name="DetectionScore">
-          <data:fvalue value="0.333455"/>
+          <data:fvalue value="0.109000"/>
         </attribute>
         <attribute name="Point"/>
       </object>
-      <object name="CellToEar" id="4" framespan="168785:169425">
+      <object name="Embrace" id="1" framespan="167515:167805">
         <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision">
           <data:bvalue value="false"/>
         </attribute>
         <attribute name="DetectionScore">
-          <data:fvalue value="0.196429"/>
+          <data:fvalue value="0.216250"/>
         </attribute>
         <attribute name="Point"/>
       </object>
-      <object name="Embrace" id="0" framespan="166945:167025">
+      <object name="Embrace" id="2" framespan="168695:169485">
         <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision">
           <data:bvalue value="false"/>
         </attribute>
         <attribute name="DetectionScore">
-          <data:fvalue value="0.128667"/>
+          <data:fvalue value="0.433400"/>
         </attribute>
         <attribute name="Point"/>
       </object>
-      <object name="Embrace" id="1" framespan="167585:167665">
+      <object name="Embrace" id="3" framespan="169565:169855">
         <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision">
           <data:bvalue value="false"/>
         </attribute>
         <attribute name="DetectionScore">
-          <data:fvalue value="0.142333"/>
+          <data:fvalue value="0.172100"/>
         </attribute>
         <attribute name="Point"/>
       </object>
-      <object name="Embrace" id="2" framespan="168185:168385">
+      <object name="Embrace" id="4" framespan="169605:169855">
         <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision">
           <data:bvalue value="false"/>
         </attribute>
         <attribute name="DetectionScore">
-          <data:fvalue value="0.141250"/>
-        </attribute>
-        <attribute name="Point"/>
-      </object>
-      <object name="Embrace" id="3" framespan="168545:169065">
-        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
-        <attribute name="BoundingBox"/>
-        <attribute name="DetectionDecision">
-          <data:bvalue value="false"/>
-        </attribute>
-        <attribute name="DetectionScore">
-          <data:fvalue value="0.214077"/>
-        </attribute>
-        <attribute name="Point"/>
-      </object>
-      <object name="Embrace" id="4" framespan="169185:169425">
-        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
-        <attribute name="BoundingBox"/>
-        <attribute name="DetectionDecision">
-          <data:bvalue value="false"/>
-        </attribute>
-        <attribute name="DetectionScore">
-          <data:fvalue value="0.236857"/>
-        </attribute>
-        <attribute name="Point"/>
-      </object>
-      <object name="Pointing" id="0" framespan="166825:167225">
-        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
-        <attribute name="BoundingBox"/>
-        <attribute name="DetectionDecision">
-          <data:bvalue value="false"/>
-        </attribute>
-        <attribute name="DetectionScore">
-          <data:fvalue value="0.265000"/>
-        </attribute>
-        <attribute name="Point"/>
-      </object>
-      <object name="Pointing" id="1" framespan="167505:167825">
-        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
-        <attribute name="BoundingBox"/>
-        <attribute name="DetectionDecision">
-          <data:bvalue value="false"/>
-        </attribute>
-        <attribute name="DetectionScore">
-          <data:fvalue value="0.189750"/>
-        </attribute>
-        <attribute name="Point"/>
-      </object>
-      <object name="Pointing" id="2" framespan="168105:169145">
-        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
-        <attribute name="BoundingBox"/>
-        <attribute name="DetectionDecision">
-          <data:bvalue value="false"/>
-        </attribute>
-        <attribute name="DetectionScore">
-          <data:fvalue value="0.303923"/>
-        </attribute>
-        <attribute name="Point"/>
-      </object>
-      <object name="Pointing" id="3" framespan="169625:170025">
-        <!-- Clone #0001 of UID (FILE: LGW_20071207_E1_CAM4.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /home/chenyang/lib/evaluation/xml/LGW_20071207_E1_CAM4.xml) -->
-        <attribute name="BoundingBox"/>
-        <attribute name="DetectionDecision">
-          <data:bvalue value="false"/>
-        </attribute>
-        <attribute name="DetectionScore">
-          <data:fvalue value="0.291250"/>
+          <data:fvalue value="0.215667"/>
         </attribute>
         <attribute name="Point"/>
       </object>

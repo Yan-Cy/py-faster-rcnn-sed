@@ -1,7 +1,0 @@
-           |  Corr:YesTarg  Miss:OmitTarg  Miss:NoTarg  FA:YesNontarg  Corr:NoNontarg  
------------+-------------------------------------------------------------------------
-CellToEar  |             3              3           20             31             958
-Embrace    |            12              1            7            261             969
-Pointing   |             2             45           39             38             570
------      |        ------         ------       ------         ------          ------
-Total      |            17             49           66            330            2497
