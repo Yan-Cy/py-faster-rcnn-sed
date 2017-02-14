@@ -45,6 +45,6 @@ if __name__ == '__main__':
     testset = '/home/chenyang/cydata/sed_subset/annodata/test.txt'
     trainanno = '/home/chenyang/cydata/sed_subset/annodata/train_annos'
     testanno = '/home/chenyang/cydata/sed_subset/annodata/test_annos'
-    CPManno = './results'
+    CPManno = './results_model1/'
     compare(trainset, trainanno, CPManno, 'train')
     compare(testset, testanno, CPManno, 'test')

@@ -3,6 +3,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.decomposition import PCA
 from sklearn.svm import SVC
 import numpy as np
+import h5py
 import re
 import sys
 import os
@@ -10,7 +11,7 @@ import pickle
 from scipy.io import loadmat
 
 CPMfeature = './CPMfeature/'
-annopath = '/home/chenyang/lib/CPM/results/'
+annopath = '/home/chenyang/lib/CPM/results_model5/'
 trainanno = '/home/chenyang/cydata/sed_subset/annodata/train_annos'
 testanno = '/home/chenyang/cydata/sed_subset/annodata/test_annos'
 trainset = '/home/chenyang/cydata/sed_subset/annodata/train.txt'
@@ -121,39 +122,56 @@ if __name__ == '__main__':
     X, Y = load_anno(trainset, annopath)
 
     print np.array(X).shape
-    cpm = loadmat('train.mat')['features']
+    #cpm = loadmat('CPM_feature/train_conv5_2_CPM.mat')['features']
+    #cpmfile = h5py.File('CPM_feature/train_conv5_1_CPM.mat')
+    #cpm = np.array(cpmfile['features'].value).swapaxes(0,1)
+    #print cpm.shape
+    partfile = h5py.File('part_feature/train_conv5_2_CPM.mat')
+    #partfile = h5py.File('part_feature/random_train_conv5_2_CPM.mat')
+    part = np.array(partfile['features'].value).swapaxes(0,1)
     #cnn = pickle.load(open('/Users/chenyang/Desktop/CMU/train_features.pkl', 'rb'))
-    pca = PCA(n_components=600)
-    pca.fit(cpm)
-    pca_feature = pca.transform(cpm)
+    #pca = PCA(n_components=30)
+    #pca.fit(part)
+    #pca_feature = pca.transform(part)
 
     #print pca_feature
     #print len(X), pca_feature.shape
-
-    X = pca_feature
+    #print part
+    X = part
+    #X = pca_feature
     #X = cpm
-    print len(X), len(X[0])
+    #X = np.hstack((X, part))
     #X = np.hstack((X, pca_feature))
     #X = np.hstack((X, cnn))
+    print len(X), len(X[0])
 
-    #clf = RandomForestClassifier(n_estimators=30)
+    clf = RandomForestClassifier(n_estimators=30)
     #clf = LogisticRegression(solver='sag', max_iter=100, random_state=42, multi_class='multinomial')
-    clf = SVC()
+    #clf = SVC(1000)
     clf.fit(X, Y)
 
     Tx, Ty = load_anno(testset, annopath)
 
     print np.array(Tx).shape
-    cpmtest = loadmat('test.mat')['features']
-    #cnn = pickle.load(open('/Users/chenyang/Desktop/CMU/test_features.pkl', 'rb'))
-    pca_feature_test = pca.transform(cpmtest)
+    #cpmtest = loadmat('./CPM_feature/test_conv5_2_CPM.mat')['features']
+    #cpmtestfile = h5py.File('CPM_feature/test_conv5_1_CPM.mat')
+    #cpmtest = np.array(cpmtestfile['features'].value).swapaxes(0,1)
+    #print cpmtest.shape
+    parttestfile = h5py.File('part_feature/test_conv5_2_CPM.mat')
+    #parttestfile = h5py.File('part_feature/random_test_conv5_2_CPM.mat')
+    parttest = np.array(parttestfile['features'].value).swapaxes(0,1)
 
-    Tx = pca_feature_test
+    #cnn = pickle.load(open('/Users/chenyang/Desktop/CMU/test_features.pkl', 'rb'))
+    #pca_feature_test = pca.transform(parttest)
+
+    Tx = parttest
+    #Tx = pca_feature_test
     #Tx = cpmtest
-    print len(Tx), len(Tx[0])
+    #Tx = np.hstack((Tx, parttest))
     #print Tx.shape
-    #Tx = np.hstack((Tx, pca_feature))
+    #Tx = np.hstack((Tx, pca_feature_test))
     #Tx = np.hstack((Tx, cnn))
+    print len(Tx), len(Tx[0])
 
     pre_y = clf.predict(Tx)
     evaluate(pre_y, Ty)

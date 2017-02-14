@@ -1,4 +1,5 @@
-function [result, visible] = run_CPM(image, rect)
+function [result, visible] = run_CPM(image, rect, param, net)
+%{
 close all;
 addpath('/home/chenyang/workspace/convolutional-pose-machines-release/testing'); 
 addpath('/home/chenyang/workspace/convolutional-pose-machines-release/testing/src'); 
@@ -7,10 +8,11 @@ addpath('/home/chenyang/workspace/convolutional-pose-machines-release/testing/ut
 param = config();
 
 fprintf('Description of selected model: %s \n', param.model(param.modelID).description);
+%}
 
 rootpath = '/home/chenyang/cydata/sed_subset/annodata/';
 
-[heatMaps, prediction] = applyModel([rootpath, 'images/', image, '.jpg'], param, rect);
+[heatMaps, prediction] = applyModel([rootpath, 'images/', image, '.jpg'], param, rect, net);
 result = prediction;
 
 visible = zeros(length(result));
