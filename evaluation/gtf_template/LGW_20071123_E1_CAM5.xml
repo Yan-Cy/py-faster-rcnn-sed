@@ -66,7 +66,7 @@
           <data:dvalue value="720"/>
         </attribute>
         <attribute name="NUMFRAMES">
-          <data:dvalue value="188832"/>
+          <data:dvalue value="187416"/>
         </attribute>
         <attribute name="SOURCETYPE"/>
         <attribute name="V-FRAME-SIZE">
@@ -74,7 +74,7 @@
         </attribute>
       </file>
       <object name="PersonRuns" id="0" framespan="1807:7324">
-        <!-- Clone #0001 of UID (FILE: LGW_20071112_E1_CAM1.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 0 | Dec: 0 (false) | XML FILE: /slp/raid1/Benchmark/trecvid/TrecVid16/SED16/00-testTEAM/DEV16/01-RandomSysfiles_staging/LGW_20071112_E1_CAM1.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071112_E1_CAM1.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187416 | FILE FS: 1:187416 | GTF : 0 | Dec: 0 (false) | XML FILE: /slp/raid1/Benchmark/trecvid/TrecVid16/SED16/00-testTEAM/DEV16/01-RandomSysfiles_staging/LGW_20071112_E1_CAM1.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision" />
         <attribute name="DetectionScore" />

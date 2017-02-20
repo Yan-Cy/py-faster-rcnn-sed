@@ -42,7 +42,7 @@
           <data:dvalue value="720"/>
         </attribute>
         <attribute name="NUMFRAMES">
-          <data:dvalue value="188832"/>
+          <data:dvalue value="187418"/>
         </attribute>
         <attribute name="SOURCETYPE"/>
         <attribute name="V-FRAME-SIZE">
@@ -50,973 +50,973 @@
         </attribute>
       </file>
       <object name="CellToEar" id="0" framespan="3751:3761">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="1" framespan="10932:10956">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="2" framespan="31791:31802">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="3" framespan="35360:35388">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="4" framespan="51787:51806">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="5" framespan="54561:54580">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="6" framespan="57124:57247">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="7" framespan="69038:69061">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="8" framespan="76557:76573">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="9" framespan="87505:88015">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="10" framespan="102846:102908">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="11" framespan="109106:109144">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="12" framespan="114482:114499">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="13" framespan="114508:114534">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="14" framespan="120369:120388">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="15" framespan="145366:145387">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="16" framespan="149318:149341">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="17" framespan="149713:149731">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="18" framespan="150152:150176">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="19" framespan="155529:155543">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="20" framespan="160037:160055">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="21" framespan="165034:165046">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="22" framespan="165258:165283">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="23" framespan="169852:169862">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="24" framespan="174791:174807">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="CellToEar" id="25" framespan="177042:177054">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="0" framespan="53797:53907">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="1" framespan="53946:53988">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="2" framespan="54074:54113">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="3" framespan="55572:55670">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="4" framespan="58003:58202">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="5" framespan="64657:64806">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="6" framespan="72838:72892">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="7" framespan="87364:87535">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="8" framespan="90247:90335">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="9" framespan="110641:110672">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="10" framespan="110859:110935">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="11" framespan="110975:111106">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="12" framespan="111633:111784">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="13" framespan="127527:127580">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="14" framespan="127731:127780">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="15" framespan="131464:131548">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="16" framespan="134641:134729">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="17" framespan="146991:147013">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="18" framespan="177532:177579">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="19" framespan="179724:179835">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="20" framespan="179990:180136">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="21" framespan="180600:180999">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="22" framespan="183076:183155">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Embrace" id="23" framespan="183077:183126">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="0" framespan="6397:6407">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="1" framespan="6422:6447">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="2" framespan="9749:9758">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="3" framespan="11658:11690">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="4" framespan="16561:16573">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="5" framespan="17792:17829">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="6" framespan="43316:43321">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="7" framespan="44283:44314">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="8" framespan="51997:52035">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="9" framespan="52800:52829">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="10" framespan="55235:55262">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="11" framespan="55332:55337">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="12" framespan="57301:57304">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="13" framespan="68748:68816">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="14" framespan="68963:68973">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="15" framespan="71207:71231">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="16" framespan="71239:71256">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="17" framespan="72421:72443">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="18" framespan="72439:72584">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="19" framespan="73746:73764">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="20" framespan="75892:75995">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="21" framespan="79195:79211">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="22" framespan="84175:84256">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="23" framespan="84296:84330">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="24" framespan="85284:85296">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="25" framespan="85409:85415">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="26" framespan="86892:86900">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="27" framespan="88320:88336">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="28" framespan="91879:91885">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="29" framespan="92022:92033">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="30" framespan="92499:92521">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="31" framespan="94269:94275">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="32" framespan="107443:107446">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="33" framespan="108668:108733">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="34" framespan="108769:108854">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="35" framespan="109079:109157">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="36" framespan="109245:109274">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="37" framespan="109368:109534">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="38" framespan="109414:109424">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="39" framespan="110564:110670">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="40" framespan="110812:110895">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="41" framespan="110882:110884">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="42" framespan="111673:111684">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="43" framespan="112609:112610">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="44" framespan="117293:117445">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="45" framespan="121876:121886">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="46" framespan="122875:122884">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="47" framespan="122914:122982">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="48" framespan="122977:123029">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="49" framespan="124078:124113">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="50" framespan="124575:124612">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="51" framespan="130339:130466">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="52" framespan="130517:130578">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="53" framespan="130829:130843">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="54" framespan="131003:131072">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="55" framespan="134113:134117">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="56" framespan="134809:134820">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="57" framespan="134882:134888">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="58" framespan="136429:136472">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="59" framespan="147409:147418">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="60" framespan="152483:152491">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="61" framespan="152949:152965">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="62" framespan="154465:154541">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="63" framespan="155400:155409">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="64" framespan="155906:155934">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="65" framespan="157459:157470">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="66" framespan="157512:157598">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="67" framespan="157956:157967">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="68" framespan="158064:158098">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="69" framespan="158224:158228">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="70" framespan="158229:158288">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="71" framespan="158239:158266">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="72" framespan="163192:163259">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="73" framespan="164371:164394">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="74" framespan="164490:164540">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="75" framespan="165890:165989">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="76" framespan="168001:168015">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="77" framespan="169889:169903">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="78" framespan="171747:171766">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="79" framespan="171882:171907">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="80" framespan="173514:173520">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="81" framespan="174687:174694">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="82" framespan="174752:174769">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="83" framespan="177937:177942">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="84" framespan="177971:177977">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="85" framespan="179227:179241">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="86" framespan="186856:186864">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="87" framespan="187223:187240">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>
         <attribute name="Point"/>
       </object>
       <object name="Pointing" id="88" framespan="187242:187253">
-        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:188832 | FILE FS: 1:188832 | GTF : 1 | Dec: N/A (N/A) | XML FILE: /home/chenyang/lib/evaluation/gtf_xml/LGW_20071123_E1_CAM2.xml) -->
+        <!-- Clone #0001 of UID (FILE: LGW_20071123_E1_CAM2.mpeg | EVENT: Fake_Event-Merger_Dummy_Type | ID: 0 | FS: 1:187418 | FILE FS: 1:187418 | GTF : 1 | Dec: N/A (N/A) | XML FILE: gtf_xml/LGW_20071123_E1_CAM2.xml) -->
         <attribute name="BoundingBox"/>
         <attribute name="DetectionDecision"/>
         <attribute name="DetectionScore"/>

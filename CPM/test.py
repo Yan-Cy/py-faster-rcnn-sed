@@ -126,13 +126,13 @@ if __name__ == '__main__':
     #cpmfile = h5py.File('CPM_feature/train_conv5_1_CPM.mat')
     #cpm = np.array(cpmfile['features'].value).swapaxes(0,1)
     #print cpm.shape
-    partfile = h5py.File('part_feature/train_conv5_2_CPM.mat')
-    #partfile = h5py.File('part_feature/random_train_conv5_2_CPM.mat')
+    #partfile = h5py.File('part_feature/train_conv5_2_CPM.mat')
+    partfile = h5py.File('part_feature/random_train_conv5_2_CPM.mat')
     part = np.array(partfile['features'].value).swapaxes(0,1)
     #cnn = pickle.load(open('/Users/chenyang/Desktop/CMU/train_features.pkl', 'rb'))
-    #pca = PCA(n_components=30)
-    #pca.fit(part)
-    #pca_feature = pca.transform(part)
+    #pca = PCA(n_components=600)
+    #pca.fit(cpm)
+    #pca_feature = pca.transform(cpm)
 
     #print pca_feature
     #print len(X), pca_feature.shape
@@ -145,9 +145,9 @@ if __name__ == '__main__':
     #X = np.hstack((X, cnn))
     print len(X), len(X[0])
 
-    clf = RandomForestClassifier(n_estimators=30)
+    clf = RandomForestClassifier(n_estimators=30000)
     #clf = LogisticRegression(solver='sag', max_iter=100, random_state=42, multi_class='multinomial')
-    #clf = SVC(1000)
+    #clf = SVC(100000)
     clf.fit(X, Y)
 
     Tx, Ty = load_anno(testset, annopath)
@@ -157,12 +157,12 @@ if __name__ == '__main__':
     #cpmtestfile = h5py.File('CPM_feature/test_conv5_1_CPM.mat')
     #cpmtest = np.array(cpmtestfile['features'].value).swapaxes(0,1)
     #print cpmtest.shape
-    parttestfile = h5py.File('part_feature/test_conv5_2_CPM.mat')
-    #parttestfile = h5py.File('part_feature/random_test_conv5_2_CPM.mat')
+    #parttestfile = h5py.File('part_feature/test_conv5_2_CPM.mat')
+    parttestfile = h5py.File('part_feature/random_test_conv5_2_CPM.mat')
     parttest = np.array(parttestfile['features'].value).swapaxes(0,1)
 
     #cnn = pickle.load(open('/Users/chenyang/Desktop/CMU/test_features.pkl', 'rb'))
-    #pca_feature_test = pca.transform(parttest)
+    #pca_feature_test = pca.transform(cpmtest)
 
     Tx = parttest
     #Tx = pca_feature_test
