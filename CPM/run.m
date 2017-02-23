@@ -14,11 +14,11 @@ function control(indexfile, imagepath, outputpath, setname, annopath)
 %predict_pose(images, rect, cls)
 %interest_layers_list = {{'conv5_2_CPM'}; {'Mconv7_stage2'}; {'Mconv7_stage3'};{'Mconv7_stage4'};{'Mconv7_stage5'};{'Mconv7_stage6'};};
 
-%interest_layers_list = {{'conv5_2_CPM'}};%; {'conv3_4'}};
-%for i = 1 : length(interest_layers_list)
-%    interest_layers = interest_layers_list{i}
-%    CPM_feature(images, rect, imagepath, outputpath, setname, interest_layers);
-%end
+interest_layers_list = {{'conv5_2_CPM'}};%; {'conv3_4'}};
+for i = 1 : length(interest_layers_list)
+    interest_layers = interest_layers_list{i}
+    CPM_feature(images, rect, imagepath, outputpath, setname, interest_layers);
+end
 
 interest_layers_list = {{'conv5_2_CPM'}};%; {'conv3_4'}};
 for i = 1 : length(interest_layers_list)
@@ -112,6 +112,8 @@ for i = 1:length(images)
     %TO DO
     % Write feature to file
     feature = [];
+    size(cnnfeature)
+    size(cnnfeature{1})
     for j = 1:length(cnnfeature)
         t = reshape(cnnfeature{j}, 1, []);
         feature = [feature, t];

@@ -117,18 +117,51 @@ def evaluate(pre_y, Ty):
     print 'Pointing', confusion[2]
     print 'CellToEar', confusion[3]
 
+def cal_mean(part, caltype):
+    meanpart = np.zeros((len(part), 60), dtype=float)
+    if caltype == 0:
+        for i in xrange(len(part)):
+            for j in xrange(60):
+                meanpart[i,j] = np.mean(part[i][j::60])
+        return meanpart
+    elif caltype == 1:
+        for i in xrange(len(part)):
+            for j in xrange(60):
+                meanpart[i,j] = np.mean(part[i][60*j:60*j+60])
+        return meanpart
+    else:
+        return part
+
+def cal_max(part, caltype):
+    maxpart = np.zeros((len(part), 60), dtype=float)
+    if caltype == 0:
+        for i in xrange(len(part)):
+            for j in xrange(60):
+                maxpart[i,j] = np.max(part[i][j::60])
+        return maxpart
+    elif caltype == 1:
+        for i in xrange(len(part)):
+            for j in xrange(60):
+                maxpart[i,j] = np.max(part[i][46*46*j:46*46*(j+1)])
+        return maxpart 
+    else:
+        return part
 
 if __name__ == '__main__':
     X, Y = load_anno(trainset, annopath)
 
     print np.array(X).shape
-    #cpm = loadmat('CPM_feature/train_conv5_2_CPM.mat')['features']
+    cpm = loadmat('CPM_feature/train_conv5_2_CPM.mat')['features']
+    #cpm = cal_mean(cpm, 1)
+    cpm = cal_max(cpm, 1)
     #cpmfile = h5py.File('CPM_feature/train_conv5_1_CPM.mat')
     #cpm = np.array(cpmfile['features'].value).swapaxes(0,1)
     #print cpm.shape
     #partfile = h5py.File('part_feature/train_conv5_2_CPM.mat')
-    partfile = h5py.File('part_feature/random_train_conv5_2_CPM.mat')
-    part = np.array(partfile['features'].value).swapaxes(0,1)
+    #partfile = h5py.File('part_feature/random_train_conv5_2_CPM.mat')
+    #part = np.array(partfile['features'].value).swapaxes(0,1)
+    #part = cal_mean(part, 0)
+    #part = cal_max(part, 0)
     #cnn = pickle.load(open('/Users/chenyang/Desktop/CMU/train_features.pkl', 'rb'))
     #pca = PCA(n_components=600)
     #pca.fit(cpm)
@@ -137,15 +170,15 @@ if __name__ == '__main__':
     #print pca_feature
     #print len(X), pca_feature.shape
     #print part
-    X = part
+    #X = part
     #X = pca_feature
-    #X = cpm
+    X = cpm
     #X = np.hstack((X, part))
     #X = np.hstack((X, pca_feature))
     #X = np.hstack((X, cnn))
     print len(X), len(X[0])
 
-    clf = RandomForestClassifier(n_estimators=30000)
+    clf = RandomForestClassifier(n_estimators=30)
     #clf = LogisticRegression(solver='sag', max_iter=100, random_state=42, multi_class='multinomial')
     #clf = SVC(100000)
     clf.fit(X, Y)
@@ -153,20 +186,23 @@ if __name__ == '__main__':
     Tx, Ty = load_anno(testset, annopath)
 
     print np.array(Tx).shape
-    #cpmtest = loadmat('./CPM_feature/test_conv5_2_CPM.mat')['features']
+    cpmtest = loadmat('./CPM_feature/test_conv5_2_CPM.mat')['features']
+    #cpmtest = cal_mean(cpmtest, 1)
+    cpmtest = cal_max(cpmtest, 1)
     #cpmtestfile = h5py.File('CPM_feature/test_conv5_1_CPM.mat')
     #cpmtest = np.array(cpmtestfile['features'].value).swapaxes(0,1)
     #print cpmtest.shape
     #parttestfile = h5py.File('part_feature/test_conv5_2_CPM.mat')
-    parttestfile = h5py.File('part_feature/random_test_conv5_2_CPM.mat')
-    parttest = np.array(parttestfile['features'].value).swapaxes(0,1)
-
+    #parttestfile = h5py.File('part_feature/random_test_conv5_2_CPM.mat')
+    #parttest = np.array(parttestfile['features'].value).swapaxes(0,1)
+    #parttest = cal_mean(parttest, 0)
+    #parttest = cal_max(parttest, 0)
     #cnn = pickle.load(open('/Users/chenyang/Desktop/CMU/test_features.pkl', 'rb'))
     #pca_feature_test = pca.transform(cpmtest)
 
-    Tx = parttest
+    #Tx = parttest
     #Tx = pca_feature_test
-    #Tx = cpmtest
+    Tx = cpmtest
     #Tx = np.hstack((Tx, parttest))
     #print Tx.shape
     #Tx = np.hstack((Tx, pca_feature_test))
